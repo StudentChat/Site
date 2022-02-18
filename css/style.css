@@ -1,0 +1,44 @@
+* {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 20px;
+}
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  justify-content: space-between;
+  display: flex;
+  height: 130px;
+  border-bottom: solid 3px black;
+}
+.header-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0, 5px;
+}
+.header-button {
+  width: auto;
+  padding: 5px 5px;
+  height: 50px;
+  border: solid 2px black;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
+}
+.header-buttons {
+  display: inline;
+  margin: auto auto;
+}
+.header-icons {
+  display: inline;
+  margin: auto auto;
+  margin-right: 60px;
+}
+.logo {
+  display: inline;
+  margin: auto auto;
+  margin-left: 60px;
+}
