@@ -1,10 +1,11 @@
 * {
   font-family: "Open-Sans", sans-serif;
   font-size: 20px;
+  margin: 0;
 }
+html,
 body {
   width: 1200px;
-  margin: 0 auto;
 }
 header {
   justify-content: space-between;
@@ -38,7 +39,50 @@ header {
   margin-right: 60px;
 }
 .logo {
-  display: inline;
+  display: block;
   margin: auto auto;
   margin-left: 60px;
+}
+.logo-auth {
+  width: 750px;
+  height: 150px;
+  margin-left: 0px;
+}
+.header-auth {
+  border-bottom: none;
+  height: 150px;
+}
+.auth-form {
+  display: block;
+  border: solid 1px black;
+  width: 350px;
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: auto;
+  margin-top: 10%;
+}
+.logo-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.auth-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.auth-text {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.auth-input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.auth-button-next {
+  font-weight: bold;
+  width: 100px;
 }
