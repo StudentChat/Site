@@ -4,3 +4,9 @@ div {
 .invisible {
   display: none;
 }
+.validTrue {
+  border: solid 1px green;
+}
+.validFalse {
+  border: solid 1px red;
+}
