@@ -6,18 +6,26 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header-auth">
-      <a class="logo-center" href="authorization.html">
-        <img class="logo logo-auth" src="img/Logo-image.svg" alt="Логотип"
+    <header>
+      <a href="authorization.html">
+        <img src="img/Logo-image.svg" alt="Логотип"
       /></a>
     </header>
     <section>
-      <div class="auth-form">
-        <p class="auth-title">Авторизация</p>
-        <p class="auth-text">Введите E-mail</p>
-        <input class="auth-input" type="email" name="e-mail" />
-        <button class="header-button auth-button-next">Далее...</button>
+      <div>
+        <p>Авторизация</p>
+        <p>Введите E-mail</p>
+        <input type="email" name="e-mail" required />
+        <button id="btnOpenWindow">Далее...</button>
+        <a href="">Для работодателей</a>
+      </div>
+      <div id="invisible" class="invisible">
+        <button id="close"><img src="img/close.svg" alt="Закрыть" /></button>
+        <p>Введите одноразовый пароль, высланный на E-mail mail@mail.ru</p>
+        <input name="pass" type="text" required />
+        <button>Войти</button>
       </div>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
