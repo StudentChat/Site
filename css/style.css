@@ -1,16 +1,113 @@
+html {
+  width: 100%;
+  height: 100%;
+}
 * {
   font-family: "open-sans", sans-serif;
   font-size: 20px;
+  margin: 0;
 }
 .border {
   border: solid 1px black;
+  border-radius: 5px;
 }
-.invisible {
-  display: none;
-}
+
 .validTrue {
   border: solid 1px green;
 }
 .validFalse {
   border: solid 1px red;
+}
+.authHeader {
+  width: 500px;
+}
+.authForm {
+  width: 260px;
+  padding: 10px 20px;
+  z-index: 1;
+}
+.authCenterScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  border-style: solid 1px black;
+}
+.btnSubmit {
+  display: block;
+}
+.authForm input {
+  display: block;
+}
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.link {
+  text-align: center;
+}
+.btnCloseForm {
+  border-radius: 5px;
+  padding: 5px 5px 0px;
+  background-color: white;
+  float: right;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.description {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.confirmInput {
+  width: 70%;
+  display: block;
+}
+.modalWindow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalWindow .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 0;
+}
+.confirmForm {
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+.invisible {
+  display: none;
 }

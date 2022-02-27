@@ -2,30 +2,61 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>StudentChat</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стена</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/Logo-light.svg" />
   </head>
   <body>
     <header>
-      <a href="authorization.html">
-        <img src="img/Logo-image.svg" alt="Логотип"
-      /></a>
+      <div class="authHeader center">
+        <a href="authorization.html">
+          <img src="img/Logo-image.svg" alt="Логотип" width="500px"
+        /></a>
+      </div>
     </header>
-    <section>
-      <div class="border">
-        <p>Авторизация</p>
-        <p>Введите E-mail</p>
-        <input id="email" type="email" name="e-mail" required pattern="a-z" />
-        <button id="btnOpenWindow">Далее...</button>
-        <a href="">Для работодателей</a>
-      </div>
-      <div id="invisible" class="invisible border">
-        <button id="close"><img src="img/close.svg" alt="Закрыть" /></button>
-        <p>Введите одноразовый пароль, высланный на E-mail mail@mail.ru</p>
-        <input name="pass" type="text" required />
-        <button id="logIn">Войти</button>
-      </div>
+
+    <section class="authCenterScreen">
+      <form action="#" class="border authForm">
+        <p class="title">Авторизация</p>
+        <input
+          class="border center"
+          id="email"
+          type="email"
+          name="e-mail"
+          placeholder="Введите E-mail"
+          required
+        />
+        <button id="btnOpenWindow" class="btn btnSubmit center" type="submit">
+          Далее...
+        </button>
+        <p class="link"><a href="">Для работодателей</a></p>
+      </form>
     </section>
+
+    <div id="modalWindow" class="invisible modalWindow">
+      <form action="#" id="invisible" class="border confirmForm invisible">
+        <button class="btnCloseForm" id="close">
+          <img src="img/close.svg" alt="Закрыть" />
+        </button>
+        <p class="description">
+          Введите одноразовый пароль, высланный на E-mail
+          <span>example@mail.ru</span>
+        </p>
+        <input
+          class="confirmInput border center"
+          name="pass"
+          type="password"
+          required
+        />
+        <button class="btn btnSubmit center" id="logIn" type="submit">
+          Войти
+        </button>
+      </form>
+      <div id="overlay" class="overlay invisible"></div>
+    </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>

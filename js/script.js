@@ -1,6 +1,8 @@
 let btnOpenWindow = document.getElementById("btnOpenWindow");
 let openWindow = document.getElementById("invisible");
 let emailForm = document.getElementById("email");
+let modalWindow = document.getElementById("modalWindow");
+let overlay = document.getElementById("overlay");
 //Валидация email
 btnOpenWindow.addEventListener("click", () => {
   // let email = document.getElementById("email").value;
@@ -11,6 +13,8 @@ btnOpenWindow.addEventListener("click", () => {
   //   emailForm.classList.remove("validFalse");
   //   emailForm.classList.add("validTrue");
   openWindow.classList.remove("invisible");
+  modalWindow.classList.remove("invisible");
+  overlay.classList.remove("invisible");
   // } else {
   //   emailForm.classList.remove("validTrue");
   //   emailForm.classList.add("validFalse");
@@ -20,9 +24,13 @@ btnOpenWindow.addEventListener("click", () => {
 let close = document.getElementById("close");
 close.addEventListener("click", () => {
   openWindow.classList.add("invisible");
+  modalWindow.classList.add("invisible");
+  overlay.classList.add("invisible");
+  window.location.replace("authorization.html");
 });
 
 let logIn = document.getElementById("logIn");
 logIn.addEventListener("click", () => {
+  //проверка наличия пользователя в бд
   window.location.replace("user/wall.html");
 });
