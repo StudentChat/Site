@@ -9,16 +9,16 @@
     <link rel="icon" href="../img/Logo-light.svg" />
   </head>
   <body>
-    <header>
+    <header class="header center">
       <img class="logo" src="../img/Logo-image.svg" alt="Логотип" />
-      <div class="header-buttons">
-        <a class="header-button" href="wall.html">Стена</a>
-        <a class="header-button" href="timetable.html">Расписание</a>
-        <a class="header-button" href="chat.html">Чат</a>
-        <a class="header-button" href="vacancy.html">Вакансии</a>
-        <a class="header-button" href="faq.html">FAQ</a>
+      <div class="btns">
+        <a class="btn" href="wall.html">Стена</a>
+        <a class="btn" href="timetable.html">Расписание</a>
+        <a class="btn" href="chat.html">Чат</a>
+        <a class="btn" href="vacancy.html">Вакансии</a>
+        <a class="btn" href="faq.html">FAQ</a>
       </div>
-      <div class="header-icons">
+      <div class="btns">
         <a href="addPost.html">
           <img
             class="header-icon"
@@ -53,36 +53,198 @@
         /></a>
       </div>
     </header>
-    <section>
-      <select name="Sort" id="Sort">
+
+    <div class="center container">
+      <select class="sort" name="Sort" id="Sort">
         <option value="">По новизне</option>
         <option value="">По количеству просмотров</option>
         <option value="">По количеству лайков</option>
         <option value="">По количеству дизлайков</option>
       </select>
-      <button>
+      <button class="filter">
         <img src="../img/filter.svg" alt="" width="40px" height="40px" />
       </button>
-    </section>
-    <section>
-      <div class="border">
+    </div>
+
+    <section class="center container postsWall">
+      <div class="border post">
         <img
           src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
           alt="Фото поста"
-          width="220px"
-          height="50%"
+          class="imgPost"
         />
-        <h1>Тема поста</h1>
-        <p>Описание поста</p>
-        <button><img src="../img/disLike.svg" alt="" /></button>
-        <button>
-          <img src="../img/profile.svg" alt="" />
-          <p>Никнейм</p>
-        </button>
-        <button><img src="../img/like.svg" alt="" /></button>
+        <h1 class="titlePost">Тема поста</h1>
+        <p class="descriptionPost">
+          1)Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic
+          amet voluptatum velit pariatur vitae molestiae totam corrupti,
+          possimus ad id laborum at ipsam cumque, ex asperiores nesciunt
+          recusandae fugit. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Nisi hic amet voluptatum velit pariatur vitae molestiae totam
+          corrupti, possimus ad id laborum at ipsam cumque, ex asperiores
+          nesciunt recusandae fugit.
+        </p>
+        <div class="downPanel">
+          <button class="dislikePost">
+            <img src="../img/disLike.svg" alt="" width="50px" />
+          </button>
+
+          <button class="profilePost">
+            <p class="nickname"><span>Никнейм</span></p>
+          </button>
+
+          <button class="likePost">
+            <img src="../img/like.svg" alt="" width="50px" />
+          </button>
+        </div>
+      </div>
+
+      <div class="border post">
+        <img
+          src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
+          alt="Фото поста"
+          class="imgPost"
+        />
+        <h1 class="titlePost">Тема поста</h1>
+        <p class="descriptionPost">
+          2)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+          doloremque nostrum deleniti voluptatem dolorum minima omnis nobis,
+          consequatur quo necessitatibus non impedit maxime praesentium sunt
+          atque, accusantium similique facere excepturi. Qui earum, quae quos
+          eligendi ut necessitatibus dignissimos, facere dolores suscipit
+          maiores excepturi distinctio eius recusandae. Veniam architecto sint
+          minus earum quidem itaque impedit recusandae error tempora, illo
+          officiis quae. Dolorum voluptatibus sunt nulla delectus laudantium
+          tenetur quos iusto minima quas aperiam eius porro assumenda id fugiat
+          praesentium, consequuntur unde pariatur non ea? Deserunt optio
+          consequatur accusantium, sequi nihil suscipit.
+        </p>
+        <div class="downPanel">
+          <button class="dislikePost">
+            <img src="../img/disLike.svg" alt="" width="50px" />
+          </button>
+
+          <button class="profilePost">
+            <p class="nickname"><span>Никнейм</span></p>
+          </button>
+
+          <button class="likePost">
+            <img src="../img/like.svg" alt="" width="50px" />
+          </button>
+        </div>
+      </div>
+
+      <div class="border post">
+        <img
+          src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
+          alt="Фото поста"
+          class="imgPost"
+        />
+        <h1 class="titlePost">Тема поста</h1>
+        <p class="descriptionPost">
+          3)Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic
+          amet voluptatum velit pariatur vitae molestiae totam corrupti,
+          possimus ad id laborum at ipsam cumque, ex asperiores nesciunt
+          recusandae fugit.
+        </p>
+        <div class="downPanel">
+          <button class="dislikePost">
+            <img src="../img/disLike.svg" alt="" width="50px" />
+          </button>
+
+          <button class="profilePost">
+            <p class="nickname"><span>Никнейм</span></p>
+          </button>
+
+          <button class="likePost">
+            <img src="../img/like.svg" alt="" width="50px" />
+          </button>
+        </div>
+      </div>
+
+      <div class="border post">
+        <img
+          src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
+          alt="Фото поста"
+          class="imgPost"
+        />
+        <h1 class="titlePost">Тема поста</h1>
+        <p class="descriptionPost">
+          4)Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic
+          amet voluptatum velit pariatur vitae molestiae totam corrupti,
+          possimus ad id laborum at ipsam cumque, ex asperiores nesciunt
+          recusandae fugit.
+        </p>
+        <div class="downPanel">
+          <button class="dislikePost">
+            <img src="../img/disLike.svg" alt="" width="50px" />
+          </button>
+
+          <button class="profilePost">
+            <p class="nickname"><span>Никнейм</span></p>
+          </button>
+
+          <button class="likePost">
+            <img src="../img/like.svg" alt="" width="50px" />
+          </button>
+        </div>
+      </div>
+
+      <div class="border post">
+        <img
+          src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
+          alt="Фото поста"
+          class="imgPost"
+        />
+        <h1 class="titlePost">Тема поста</h1>
+        <p class="descriptionPost">
+          5)Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic
+          amet voluptatum velit/
+        </p>
+        <div class="downPanel">
+          <button class="dislikePost">
+            <img src="../img/disLike.svg" alt="" width="50px" />
+          </button>
+
+          <button class="profilePost">
+            <p class="nickname"><span>Никнейм</span></p>
+          </button>
+
+          <button class="likePost">
+            <img src="../img/like.svg" alt="" width="50px" />
+          </button>
+        </div>
+      </div>
+
+      <div class="border post">
+        <img
+          src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
+          alt="Фото поста"
+          class="imgPost"
+        />
+        <h1 class="titlePost">Тема поста</h1>
+        <p class="descriptionPost">
+          6)Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic
+          amet voluptatum velit pariatur vitae molestiae totam corrupti,
+          possimus ad id laborum at ipsam cumque, ex asperiores nesciunt
+          recusandae fugit.
+        </p>
+        <div class="downPanel">
+          <button class="dislikePost">
+            <img src="../img/disLike.svg" alt="" width="50px" />
+          </button>
+
+          <button class="profilePost">
+            <p class="nickname"><span>Никнейм</span></p>
+          </button>
+
+          <button class="likePost">
+            <img src="../img/like.svg" alt="" width="50px" />
+          </button>
+        </div>
       </div>
     </section>
-    <form action="#" id="filter" class="border invisible">
+
+    <form action="#" id="filter" class="border invisible filter">
       <p>Тематика поста</p>
       <select name="subject" id="subject">
         <option value=""></option>

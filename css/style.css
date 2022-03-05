@@ -1,17 +1,16 @@
-html {
-  width: 100%;
-  height: 100%;
-}
 * {
   font-family: "open-sans", sans-serif;
   font-size: 20px;
   margin: 0;
+  box-sizing: border-box;
+}
+.db {
+  display: block;
 }
 .border {
   border: solid 1px black;
   border-radius: 5px;
 }
-
 .validTrue {
   border: solid 1px green;
 }
@@ -20,9 +19,10 @@ html {
 }
 .authHeader {
   width: 500px;
+  margin-top: 5%;
 }
 .authForm {
-  width: 260px;
+  width: 300px;
   padding: 10px 20px;
   z-index: 1;
 }
@@ -37,10 +37,19 @@ html {
   justify-content: center;
 }
 .btn {
+  color: black;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   background-color: white;
-  border-style: solid 1px black;
+  border: solid 1px black;
+  cursor: pointer;
+  text-decoration: none;
+  height: 50px;
+  font-weight: 600;
+}
+.btns {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .btnSubmit {
   display: block;
@@ -75,10 +84,6 @@ html {
   margin-top: 50px;
   margin-bottom: 10px;
 }
-.confirmInput {
-  width: 70%;
-  display: block;
-}
 .modalWindow {
   position: fixed;
   top: 0;
@@ -110,4 +115,131 @@ html {
 }
 .invisible {
   display: none;
+}
+.confirmInput {
+  width: 90%;
+  display: block;
+}
+.centerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.header {
+  width: 1200px;
+  display: flex;
+  padding: 0 30px;
+  height: 100px;
+  border-bottom: solid 1px black;
+  justify-content: space-between;
+}
+.btnHeader {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.logo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.post {
+  padding: 10px;
+  width: 350px;
+  margin-top: 10px;
+  display: inline-block;
+  margin-bottom: auto;
+}
+.imgPost {
+  width: 100%;
+  border-radius: 5px;
+}
+.titlePost {
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.descriptionPost {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 25px;
+}
+.dislikePost {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.likePost {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.profilePost {
+  border-radius: 5px;
+  height: 50px;
+  background: url("../img/profile.svg") no-repeat left;
+  background-size: 50px;
+  width: 60%;
+  border: solid 2px black;
+  padding: 10px 50px;
+  margin-bottom: auto;
+}
+.nickname span {
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+}
+.downPanel {
+  display: flex;
+  justify-content: space-between;
+}
+.postsWall {
+  column-count: 3;
+  justify-content: space-between;
+}
+.filter {
+  float: right;
+  background: none;
+  border: none;
+}
+.sort {
+  border-radius: 5px;
+  border: solid 1px black;
+  width: 350px;
+  height: 50px;
+}
+
+.btnTimetable {
+  width: 250px;
+}
+.timetableTitle {
+  text-align: center;
+  font-size: 25px;
+}
+.inputTimetable {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+section {
+  position: relative;
+  height: 85%;
+}
+.timetableForm {
+  margin-bottom: 0;
+  width: 450px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-top: 10px;
+  background-color: white;
 }

@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Стена</title>
+    <title>Расписание</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../img/Logo-light.svg" />
   </head>
   <body>
-    <header>
+    <header class="header center">
       <img class="logo" src="../img/Logo-image.svg" alt="Логотип" />
-      <div class="header-buttons">
-        <a class="header-button" href="wall.html">Стена</a>
-        <a class="header-button" href="timetable.html">Расписание</a>
-        <a class="header-button" href="chat.html">Чат</a>
-        <a class="header-button" href="vacancy.html">Вакансии</a>
-        <a class="header-button" href="faq.html">FAQ</a>
+      <div class="btns">
+        <a class="btn" href="wall.html">Стена</a>
+        <a class="btn" href="timetable.html">Расписание</a>
+        <a class="btn" href="chat.html">Чат</a>
+        <a class="btn" href="vacancy.html">Вакансии</a>
+        <a class="btn" href="faq.html">FAQ</a>
       </div>
-      <div class="header-icons">
-        <a href="addPost.html">
-          <img
+      <div class="btns">
+        <a href="addPost.html"
+          ><img
             class="header-icon"
             src="../img/add.svg"
             alt="Добавить пост"
@@ -43,6 +43,7 @@
             width="50px"
             height="50px"
         /></a>
+        <!-- сделать выход через js -->
         <a href="../authorization.html">
           <img
             class="header-icon"
@@ -53,5 +54,31 @@
         /></a>
       </div>
     </header>
+    <div class="border timetableForm center">
+      <p class="center db timetableTitle">
+        Выберите способ отображения расписания
+      </p>
+      <button class="center db btn btnTimetable">Использовать ссылку</button>
+      <form action="" class="center db invisible">
+        <input type="text" class="border db center inputTimetable" />
+        <button class="btn db center">Сохранить</button>
+      </form>
+      <button class="btn db center btnTimetable">Использовать ЕСР</button>
+      <form action="#" class="center db invisible">
+        <p class="center db link">Выберите учреждение</p>
+        <select name="" id="" class="center db inputTimetable" required>
+          <option value=""></option>
+        </select>
+        <p class="center db link">Выберите группу</p>
+        <select name="" id="" class="center db inputTimetable" required>
+          <option value=""></option>
+        </select>
+        <p class="center db link">Введите имя</p>
+        <input type="text" class="center db inputTimetable" required />
+        <p class="center db link">Введите фамилию</p>
+        <input type="text" class="center db inputTimetable" required />
+        <button type="submit" class="btn center db">Сохранить</button>
+      </form>
+    </div>
   </body>
 </html>
