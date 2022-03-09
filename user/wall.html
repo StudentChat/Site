@@ -61,7 +61,7 @@
         <option value="">По количеству лайков</option>
         <option value="">По количеству дизлайков</option>
       </select>
-      <button class="filter">
+      <button class="btn filterIcon">
         <img src="../img/filter.svg" alt="" width="40px" height="40px" />
       </button>
     </div>
@@ -244,18 +244,42 @@
       </div>
     </section>
 
-    <form action="#" id="filter" class="border invisible filter">
+    <form action="#" id="filterUser" class="border filter invisible">
+      <button class="btnCloseForm" id="closefilterUser">
+        <img src="../img/close.svg" alt="Закрыть" />
+      </button>
       <p>Тематика поста</p>
-      <select name="subject" id="subject">
+      <select name="subject" id="subject" class="border list mb">
         <option value=""></option>
       </select>
-      <p><input type="checkbox" name="check" />Главное изображение</p>
-      <p><input type="checkbox" name="check" />Описание поста</p>
-      <p><input type="checkbox" name="check" />Прикрепленные файлы</p>
-      <p>Больше <input type="text" /> лайков</p>
-      <p>Больше <input type="text" /> дизлайков</p>
-      <p>Больше <input type="text" /> комментариев</p>
-      <button type="submit">Применить</button>
+      <label>
+        <input
+          id="image"
+          type="checkbox"
+          name="check"
+          class="checkboxSize border mb"
+        />
+        Главное изображение
+      </label>
+      <label class="db">
+        <input class="checkboxSize border mb" type="checkbox" name="check" />
+        Описание поста </label
+      ><label class="db">
+        <input class="checkboxSize border mb" type="checkbox" name="check" />
+        Прикрепленные файлы
+      </label>
+      <p>
+        Больше <input class="border filterInputSmall mb" type="text" /> лайков
+      </p>
+      <p>
+        Больше
+        <input class="border filterInputSmall mb" type="text" /> дизлайков
+      </p>
+      <p>
+        Больше
+        <input class="border filterInputSmall mb" type="text" /> комментариев
+      </p>
+      <button class="db btn center" type="submit">Применить</button>
     </form>
   </body>
 </html>

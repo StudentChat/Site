@@ -203,9 +203,16 @@
   justify-content: space-between;
 }
 .filter {
-  float: right;
+  padding: 10px;
+  padding-top: 20px;
   background: none;
-  border: none;
+  width: 450px;
+  font-size: 30px;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .sort {
   border-radius: 5px;
@@ -213,7 +220,6 @@
   width: 350px;
   height: 50px;
 }
-
 .btnTimetable {
   width: 250px;
 }
@@ -227,11 +233,6 @@
   border-radius: 5px;
   padding-left: 10px;
 }
-
-section {
-  position: relative;
-  height: 85%;
-}
 .timetableForm {
   margin-bottom: 0;
   width: 450px;
@@ -242,4 +243,86 @@ section {
   transform: translate(0, -50%);
   padding-top: 10px;
   background-color: white;
+}
+.containerChat {
+  width: 1200px;
+  border-radius: 5px;
+}
+.headChat {
+  height: 50px;
+  border-bottom: solid 1px black;
+}
+.searchButton {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+}
+.messagesChat {
+  width: 300px;
+  height: 100%;
+  padding: 10px;
+  float: left;
+}
+.chat {
+  border-left: 1px solid black;
+  padding: 0;
+  width: 895px;
+  height: 81vh;
+  margin-right: auto;
+  display: inline-block;
+}
+.message {
+  padding: 5px;
+}
+.iconUserMessage {
+  padding: 5px;
+  width: 50px;
+  height: 100%;
+  border-right: solid 1px black;
+  float: left;
+  display: block;
+}
+.textMessage {
+  padding-left: 5px;
+  width: 210px;
+  display: inline-block;
+}
+.searchDialog {
+  margin-bottom: auto;
+}
+.filterIcon {
+  border: none;
+  float: right;
+}
+.list {
+  width: 430px;
+  height: 40px;
+}
+.filter p,
+label {
+  font-size: 30px;
+}
+.filterInputSmall {
+  width: 90px;
+  height: 40px;
+}
+.filterInputMiddleFirst {
+  width: 200px;
+  height: 40px;
+}
+.filterInputMiddleSecond {
+  width: 200px;
+  height: 40px;
+  float: right;
+}
+.checkboxSize {
+  width: 30px;
+  height: 30px;
+}
+.mb {
+  margin-bottom: 20px;
 }
