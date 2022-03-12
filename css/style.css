@@ -17,6 +17,7 @@
 .validFalse {
   border: solid 1px red;
 }
+/* вкладка авторизации */
 .authHeader {
   width: 500px;
   margin-top: 5%;
@@ -125,11 +126,13 @@
   align-items: center;
   justify-content: center;
 }
+/* вкладка стена */
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+  position: relative;
 }
 .header {
   width: 1200px;
@@ -220,6 +223,7 @@
   width: 350px;
   height: 50px;
 }
+/* вкладка расписание */
 .btnTimetable {
   width: 250px;
 }
@@ -244,56 +248,100 @@
   padding-top: 10px;
   background-color: white;
 }
-.containerChat {
-  width: 1200px;
-  border-radius: 5px;
-}
+/* вкладка чат */
 .headChat {
   height: 50px;
-  border-bottom: solid 1px black;
+  border: solid 1px black;
+  position: relative;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
-.searchButton {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 0;
+.searchMessageBtn {
   background: none;
   border: none;
-  border-radius: 10px;
-  display: inline-block;
-}
-.messagesChat {
-  width: 300px;
-  height: 100%;
-  padding: 10px;
-  float: left;
-}
-.chat {
-  border-left: 1px solid black;
   padding: 0;
-  width: 895px;
-  height: 81vh;
-  margin-right: auto;
+}
+.searchMessage {
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 50px;
+}
+.btnEnter {
+  position: relative;
+  bottom: 5px;
+  left: 300px;
+  cursor: pointer;
+}
+.messagesBox {
+  width: 300px;
+  height: 650px;
+  border: solid 1px black;
+  padding: 5px;
+  border-bottom-left-radius: 5px;
   display: inline-block;
+  position: absolute;
+  margin: 0;
+  top: 60px;
 }
 .message {
-  padding: 5px;
+  position: relative;
+  height: 52px;
 }
 .iconUserMessage {
-  padding: 5px;
   width: 50px;
-  height: 100%;
-  border-right: solid 1px black;
-  float: left;
-  display: block;
+  height: 50px;
+  border-right: 1px solid black;
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+}
+.nicknameMessage {
+  display: inline-block;
+  position: absolute;
+  left: 60px;
+  cursor: pointer;
 }
 .textMessage {
-  padding-left: 5px;
-  width: 210px;
   display: inline-block;
+  position: absolute;
+  top: 25px;
+  left: 60px;
 }
-.searchDialog {
-  margin-bottom: auto;
+.chatWindow {
+  width: 830px;
+  height: 650px;
+  display: inline-block;
+  position: absolute;
+  left: 340px;
+  top: 60px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
 }
+.writeMessage {
+  padding-left: 10px;
+  height: 48px;
+  width: 600px;
+}
+.sendMessage {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.sendMessageBtn {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+/* вкладка вакансии(стили для фильтра) */
 .filterIcon {
   border: none;
   float: right;
@@ -325,4 +373,80 @@ label {
 }
 .mb {
   margin-bottom: 20px;
+}
+/* страница faq */
+.titleFAQ {
+  font-size: 32px;
+}
+.textFAQ {
+  font-size: 26px;
+}
+.blockFAQ {
+  border-top: solid 1px black;
+  padding: 0 0 20px 0;
+}
+.comment {
+  resize: vertical;
+  height: 300px;
+}
+.formFaq {
+  padding: 10px;
+  width: 420px;
+  margin-bottom: 50%;
+}
+.inputFaq {
+  width: 390px;
+}
+/* страница добавить пост */
+.formAddPost {
+  width: 1000px;
+  padding: 20px;
+  margin-bottom: 0;
+}
+.File {
+  display: none;
+}
+.uploadFile {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.imgUpload {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.textUpload {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+.blockAddPost {
+  display: inline-block;
+}
+.inputTitlePost {
+  width: 740px;
+}
+.inputDescriptionPost {
+  width: 740px;
+  height: 200px;
+  resize: none;
+}
+.inputSelectPost {
+  width: 740px;
+}
+.inputFilePost {
+  height: 90px;
+  cursor: pointer;
+  display: inline-block;
+  width: 740px;
+  margin-bottom: 20px;
+}
+.mt {
+  margin-top: 0;
+}
+.btnAddPost {
+  margin-bottom: 0;
 }

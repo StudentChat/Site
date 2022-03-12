@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Стена</title>
+    <title>Создать пост</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../img/Logo-light.svg" />
   </head>
@@ -54,5 +54,51 @@
         /></a>
       </div>
     </header>
+
+    <section>
+      <form class="border formAddPost center">
+        <label class="uploadFile border db">
+          <input class="File" type="file" multiple accept="image/*" required />
+          <img
+            class="center db imgUpload"
+            src="../img/upload.svg"
+            alt=""
+            width="100px"
+            height="100px"
+          />
+          <p class="textUpload">Загрузить</p>
+        </label>
+        <div class="blockAddPost">
+          <p class="db">Введите тему поста</p>
+          <input class="db inputTitlePost border center" type="text" required />
+          <p class="db">Введите описание поста</p>
+          <textarea
+            class="border db center inputDescriptionPost"
+            required
+          ></textarea>
+          <p class="db">Выберите тематику поста</p>
+          <select
+            class="db inputSelectPost border center"
+            name=""
+            id=""
+            required
+          >
+            <option value=""></option>
+          </select>
+          <label class="db inputFilePost center border">
+            <input class="File" type="file" />
+            <img
+              class="db center imgUpload mt"
+              src="../img/upload_files.svg"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+            <p class="textUpload">Загрузить файлы</p>
+          </label>
+        </div>
+        <button class="db btn center btnAddPost">Создать пост</button>
+      </form>
+    </section>
   </body>
 </html>

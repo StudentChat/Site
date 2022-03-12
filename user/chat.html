@@ -54,26 +54,53 @@
         /></a>
       </div>
     </header>
-
-    <section class="border center containerChat">
-      <div class="headChat">
-        <button class="searchButton">
-          <img src="../img/search.svg" alt="Поиск" width="50px" height="50px" />
+    <section class="container">
+      <form action="#" class="headChat">
+        <button class="searchMessageBtn">
+          <img src="../img/search.svg" alt="" width="50px" />
         </button>
-        <input class="searchDialog" type="text" />
-      </div>
-      <div class="messagesChat">
-        <div class="border message">
-          <div class="iconUserMessage">
-            <img src="../img/profile.svg" alt="" width="40px" height="40px" />
-          </div>
-          <div class="textMessage">
-            <h1>user</h1>
-            <p>Lorem, ipsum dolor sit amet</p>
-          </div>
+        <input
+          class="searchMessage border"
+          type="text"
+          placeholder="Поиск пользователей"
+        />
+        <button type="submit" class="searchMessageBtn btnEnter">
+          <img class="" src="../img/enter.svg" alt="" width="40px" />
+        </button>
+      </form>
+      <div class="messagesBox">
+        <div class="message border center">
+          <button class="iconUserMessage">
+            <img src="../img/profile.svg" alt="" width="50px" />
+          </button>
+          <h1 class="nicknameMessage">User</h1>
+          <p class="textMessage">Lorem ipsum dolor sit...</p>
+        </div>
+
+        <div class="message border center">
+          <button class="iconUserMessage">
+            <img src="../img/profile.svg" alt="" width="50px" />
+          </button>
+          <h1 class="nicknameMessage">User</h1>
+          <p class="textMessage">Lorem ipsum dolor sit...</p>
+        </div>
+
+        <div class="message border center">
+          <button class="iconUserMessage">
+            <img src="../img/profile.svg" alt="" width="50px" />
+          </button>
+          <h1 class="nicknameMessage">User</h1>
+          <p class="textMessage">Lorem ipsum dolor sit...</p>
         </div>
       </div>
-      <div class="chat"></div>
+      <div class="chatWindow border">
+        <form action="#" class="sendMessage center db">
+          <input class="writeMessage border" type="text" />
+          <button type="submit" class="searchMessageBtn sendMessageBtn">
+            <img src="../img/enter.svg" alt="" width="40px" />
+          </button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
