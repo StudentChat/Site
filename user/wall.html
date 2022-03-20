@@ -10,7 +10,9 @@
   </head>
   <body>
     <header class="header center">
-      <img class="logo" src="../img/Logo-image.svg" alt="Логотип" />
+      <a class="logo" href="wall.html"
+        ><img class="logo" src="../img/Logo-image.svg" alt="Логотип"
+      /></a>
       <div class="btns">
         <a class="btn" href="wall.html">Стена</a>
         <a class="btn" href="timetable.html">Расписание</a>
@@ -19,42 +21,23 @@
         <a class="btn" href="faq.html">FAQ</a>
       </div>
       <div class="btns">
-        <a href="addPost.html">
-          <img
-            class="header-icon"
-            src="../img/add.svg"
-            alt="Добавить пост"
-            width="50px"
-            height="50px"
+        <a href="addPost.html"
+          ><img class="headerIcon" src="../img/add.svg" alt="Добавить пост"
         /></a>
         <a href="profile.html"
-          ><img
-            class="header-icon"
-            src="../img/profile.svg"
-            alt="Профиль"
-            width="50px"
-            height="50px"
+          ><img class="headerIcon" src="../img/profile.svg" alt="Профиль"
         /></a>
         <a href="setting.html">
-          <img
-            class="header-icon"
-            src="../img/setting.svg"
-            alt="Настройки"
-            width="50px"
-            height="50px"
+          <img class="headerIcon" src="../img/setting.svg" alt="Настройки"
         /></a>
+        <!-- сделать выход через js -->
         <a href="../authorization.html">
-          <img
-            class="header-icon"
-            src="../img/log out.svg"
-            alt="Выход"
-            width="50px"
-            height="50px"
+          <img class="headerIcon" src="../img/log out.svg" alt="Выход"
         /></a>
       </div>
     </header>
 
-    <div class="center container">
+    <div class="center container filters">
       <select class="sort" name="Sort" id="Sort">
         <option value="">По новизне</option>
         <option value="">По количеству просмотров</option>
@@ -68,23 +51,24 @@
 
     <section class="center container postsWall">
       <div class="border post">
-        <img
-          src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
-          alt="Фото поста"
-          class="imgPost"
-        />
-        <h1 class="titlePost singlelineTitle">Тема поста</h1>
-        <p class="descriptionPost singlelineText">
-          2)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-          doloremque.
-        </p>
-
+        <a href="viewPost.html" class="decorationPost">
+          <img
+            src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
+            alt="Фото поста"
+            class="imgPost"
+          />
+          <h1 class="titlePost singlelineTitle">Тема поста</h1>
+          <p class="descriptionPost singlelineText">
+            2)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+            doloremque.
+          </p>
+        </a>
         <div class="downPanel">
           <button class="dislikePost">
             <img src="../img/disLike.svg" alt="" width="50px" />
           </button>
 
-          <button class="profilePost">
+          <a href="profile.html" class="profilePost decorationPost">
             <img
               class="dib imgProfilePost"
               src="../img/profile.svg"
@@ -92,59 +76,7 @@
               width="46px"
             />
             <p class="nickname dib">olegmamonov10</p>
-          </button>
-
-          <button class="likePost">
-            <img src="../img/like.svg" alt="" width="50px" />
-          </button>
-        </div>
-
-        <div class="statisticPost">
-          <div class="border db statisticElement">
-            <img class="staticticImage" src="../img/like.svg" alt="" />
-            <p class="statisticNumber">0</p>
-          </div>
-          <div class="border db statisticElement">
-            <img class="staticticImage" src="../img/disLike.svg" alt="" />
-            <p class="statisticNumber">0</p>
-          </div>
-          <div class="border db statisticElement">
-            <img class="staticticImage" src="../img/comment.svg" alt="" />
-            <p class="statisticNumber">0</p>
-          </div>
-          <div class="border db statisticElement">
-            <img class="staticticImage" src="../img/eye.svg" alt="" />
-            <p class="statisticNumber">0</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="border post">
-        <img
-          src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
-          alt="Фото поста"
-          class="imgPost"
-        />
-        <h1 class="titlePost singlelineTitle">Тема поста</h1>
-        <p class="descriptionPost singlelineText">
-          2)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-          doloremque.
-        </p>
-
-        <div class="downPanel">
-          <button class="dislikePost">
-            <img src="../img/disLike.svg" alt="" width="50px" />
-          </button>
-
-          <button class="profilePost">
-            <img
-              class="dib imgProfilePost"
-              src="../img/profile.svg"
-              alt=""
-              width="46px"
-            />
-            <p class="nickname dib">olegmamonov10</p>
-          </button>
+          </a>
 
           <button class="likePost">
             <img src="../img/like.svg" alt="" width="50px" />

@@ -10,7 +10,9 @@
   </head>
   <body>
     <header class="header center">
-      <img class="logo" src="../img/Logo-image.svg" alt="Логотип" />
+      <a class="logo" href="wall.html"
+        ><img class="logo" src="../img/Logo-image.svg" alt="Логотип"
+      /></a>
       <div class="btns">
         <a class="btn" href="wall.html">Стена</a>
         <a class="btn" href="timetable.html">Расписание</a>
@@ -20,40 +22,21 @@
       </div>
       <div class="btns">
         <a href="addPost.html"
-          ><img
-            class="header-icon"
-            src="../img/add.svg"
-            alt="Добавить пост"
-            width="50px"
-            height="50px"
+          ><img class="headerIcon" src="../img/add.svg" alt="Добавить пост"
         /></a>
         <a href="profile.html"
-          ><img
-            class="header-icon"
-            src="../img/profile.svg"
-            alt="Профиль"
-            width="50px"
-            height="50px"
+          ><img class="headerIcon" src="../img/profile.svg" alt="Профиль"
         /></a>
         <a href="setting.html">
-          <img
-            class="header-icon"
-            src="../img/setting.svg"
-            alt="Настройки"
-            width="50px"
-            height="50px"
+          <img class="headerIcon" src="../img/setting.svg" alt="Настройки"
         /></a>
         <!-- сделать выход через js -->
-        <a href="">
-          <img
-            class="header-icon"
-            src="../img/log out.svg"
-            alt="Выход"
-            width="50px"
-            height="50px"
+        <a href="../authorization.html">
+          <img class="headerIcon" src="../img/log out.svg" alt="Выход"
         /></a>
       </div>
     </header>
+
     <section class="container">
       <div class="settingForm border db center">
         <div class="">
@@ -69,30 +52,30 @@
         <form action="" class="invisible mb">
           <p>Введите ссылку для доступа к сайту расписания</p>
           <input type="text" class="dib inputLinkSetting border" />
-          <button class="btn">Сохранить</button>
+          <button class="btn dib">Сохранить</button>
         </form>
 
         <form action="" class="invisible">
           <p>Введите данные для доступа к расписанию из ЕСР</p>
-          <div class="wrap">
+          <div class="wrap mb">
             <select class="esrInput border" name="" id="">
               <option value="">Выберите город</option>
             </select>
-            <select class="EsrInput border" name="" id="">
+            <select class="esrInput border" name="" id="">
               <option value="">Выберите учреждение</option>
             </select>
-            <select class="EsrInput border" name="" id="">
+            <select class="esrInput border" name="" id="">
               <option value="">Выберите группу</option>
             </select>
           </div>
-          <div class="wrap">
+          <div class="wrap mb">
             <input
-              class="EsrInput border name"
+              class="esrInput border name"
               type="text"
               placeholder="Введите имя"
             />
             <input
-              class="EsrInput border secondNmae"
+              class="esrInput border secondNmae"
               type="text"
               placeholder="Введите фамилию"
             />

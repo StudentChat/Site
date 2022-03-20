@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Стена</title>
+    <title>Профиль</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../img/Logo-light.svg" />
   </head>
   <body>
     <header class="header center">
-      <img class="logo" src="../img/Logo-image.svg" alt="Логотип" />
+      <a class="logo" href="wall.html"
+        ><img class="logo" src="../img/Logo-image.svg" alt="Логотип"
+      /></a>
       <div class="btns">
         <a class="btn" href="wall.html">Стена</a>
         <a class="btn" href="timetable.html">Расписание</a>
@@ -20,40 +22,21 @@
       </div>
       <div class="btns">
         <a href="addPost.html"
-          ><img
-            class="header-icon"
-            src="../img/add.svg"
-            alt="Добавить пост"
-            width="50px"
-            height="50px"
+          ><img class="headerIcon" src="../img/add.svg" alt="Добавить пост"
         /></a>
         <a href="profile.html"
-          ><img
-            class="header-icon"
-            src="../img/profile.svg"
-            alt="Профиль"
-            width="50px"
-            height="50px"
+          ><img class="headerIcon" src="../img/profile.svg" alt="Профиль"
         /></a>
         <a href="setting.html">
-          <img
-            class="header-icon"
-            src="../img/setting.svg"
-            alt="Настройки"
-            width="50px"
-            height="50px"
+          <img class="headerIcon" src="../img/setting.svg" alt="Настройки"
         /></a>
         <!-- сделать выход через js -->
-        <a href="">
-          <img
-            class="header-icon"
-            src="../img/log out.svg"
-            alt="Выход"
-            width="50px"
-            height="50px"
+        <a href="../authorization.html">
+          <img class="headerIcon" src="../img/log out.svg" alt="Выход"
         /></a>
       </div>
     </header>
+
     <section class="container">
       <div class="userSection">
         <label class="uploadPhoto border db center">
@@ -71,54 +54,38 @@
         <p class="nicknameUser">Никнейм</p>
       </div>
 
-      <div class="border post">
-        <img
-          src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
-          alt="Фото поста"
-          class="imgPost"
-        />
-        <h1 class="titlePost">Тема поста</h1>
-        <p class="descriptionPost">
-          1)Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <button class="btn db center btnEditPost">Редактировать</button>
-        <button class="btn btnRemovePost">Удалить</button>
-        <div class="statisticPost">
-          <div class="border db statisticElement">
-            <img
-              class="staticticImage"
-              src="../img/like.svg"
-              alt=""
-              width="50px"
-            />
-            <p class="statisticNumber">0</p>
-          </div>
-          <div class="border db statisticElement">
-            <img
-              class="staticticImage"
-              src="../img/disLike.svg"
-              alt=""
-              width="50px"
-            />
-            <p class="statisticNumber">0</p>
-          </div>
-          <div class="border db statisticElement">
-            <img
-              class="staticticImage"
-              src="../img/comment.svg"
-              alt=""
-              width="50px"
-            />
-            <p class="statisticNumber">0</p>
-          </div>
-          <div class="border db statisticElement">
-            <img
-              class="staticticImage"
-              src="../img/eye.svg"
-              alt=""
-              width="50px"
-            />
-            <p class="statisticNumber">0</p>
+      <div class="postsWall">
+        <div class="border post">
+          <img
+            src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
+            alt="Фото поста"
+            class="imgPost"
+          />
+          <h1 class="titlePost singlelineTitle">Тема поста</h1>
+          <p class="descriptionPost singlelineText">
+            2)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+            doloremque.
+          </p>
+          <button class="btn db center btnEditPost">Редактировать</button>
+          <button class="btn btnRemovePost">Удалить</button>
+
+          <div class="statisticPost">
+            <div class="border db statisticElement">
+              <img class="staticticImage" src="../img/like.svg" alt="" />
+              <p class="statisticNumber">0</p>
+            </div>
+            <div class="border db statisticElement">
+              <img class="staticticImage" src="../img/disLike.svg" alt="" />
+              <p class="statisticNumber">0</p>
+            </div>
+            <div class="border db statisticElement">
+              <img class="staticticImage" src="../img/comment.svg" alt="" />
+              <p class="statisticNumber">0</p>
+            </div>
+            <div class="border db statisticElement">
+              <img class="staticticImage" src="../img/eye.svg" alt="" />
+              <p class="statisticNumber">0</p>
+            </div>
           </div>
         </div>
       </div>

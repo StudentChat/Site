@@ -10,7 +10,9 @@
   </head>
   <body>
     <header class="header center">
-      <img class="logo" src="../img/Logo-image.svg" alt="Логотип" />
+      <a class="logo" href="wall.html"
+        ><img class="logo" src="../img/Logo-image.svg" alt="Логотип"
+      /></a>
       <div class="btns">
         <a class="btn" href="wall.html">Стена</a>
         <a class="btn" href="timetable.html">Расписание</a>
@@ -20,50 +22,33 @@
       </div>
       <div class="btns">
         <a href="addPost.html"
-          ><img
-            class="header-icon"
-            src="../img/add.svg"
-            alt="Добавить пост"
-            width="50px"
-            height="50px"
+          ><img class="headerIcon" src="../img/add.svg" alt="Добавить пост"
         /></a>
         <a href="profile.html"
-          ><img
-            class="header-icon"
-            src="../img/profile.svg"
-            alt="Профиль"
-            width="50px"
-            height="50px"
+          ><img class="headerIcon" src="../img/profile.svg" alt="Профиль"
         /></a>
         <a href="setting.html">
-          <img
-            class="header-icon"
-            src="../img/setting.svg"
-            alt="Настройки"
-            width="50px"
-            height="50px"
+          <img class="headerIcon" src="../img/setting.svg" alt="Настройки"
         /></a>
         <!-- сделать выход через js -->
         <a href="../authorization.html">
-          <img
-            class="header-icon"
-            src="../img/log out.svg"
-            alt="Выход"
-            width="50px"
-            height="50px"
+          <img class="headerIcon" src="../img/log out.svg" alt="Выход"
         /></a>
       </div>
     </header>
+
     <div class="border timetableForm center">
       <p class="center db timetableTitle">
         Выберите способ отображения расписания
       </p>
       <button class="center db btn btnTimetable">Использовать ссылку</button>
+
       <form action="" class="center db invisible">
         <input type="text" class="border db center inputTimetable" />
         <button class="btn db center">Сохранить</button>
       </form>
       <button class="btn db center btnTimetable">Использовать ЕСР</button>
+
       <form action="#" class="center db invisible">
         <select name="" id="" class="center db inputTimetable" required>
           <option value="">Выберите город</option>
