@@ -51,22 +51,31 @@
           <p class="textUpload">Загрузить фото</p>
           <button class="btn btnMessage">Написать</button>
         </label>
-        <p class="nicknameUser">Никнейм</p>
+        <div class="center db nicknameField">
+          <p class="nicknameUser dib">Никнейм</p>
+          <button class="btnEditNicknameUser">
+            <img class="editNicknameUser" src="../img/pencil.svg" alt="" />
+          </button>
+        </div>
       </div>
 
       <div class="postsWall">
         <div class="border post">
-          <img
-            src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
-            alt="Фото поста"
-            class="imgPost"
-          />
-          <h1 class="titlePost singlelineTitle">Тема поста</h1>
-          <p class="descriptionPost singlelineText">
-            2)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-            doloremque.
-          </p>
+          <a href="viewPost.html" class="decorationPost">
+            <img
+              src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
+              alt="Фото поста"
+              class="imgPost"
+            />
+            <h1 class="titlePost singlelineTitle">Тема поста</h1>
+            <p class="descriptionPost singlelineText">
+              2)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+              doloremque.
+            </p>
+          </a>
+          <!-- сделать переход через js -->
           <button class="btn db center btnEditPost">Редактировать</button>
+
           <button class="btn btnRemovePost">Удалить</button>
 
           <div class="statisticPost">
@@ -89,6 +98,30 @@
           </div>
         </div>
       </div>
+
+      <form class="postRemoveConfirm border invisible">
+        <p class="timetableTitle mb">
+          Вы действительно хотите удалить данный пост? (Восстановить его будет
+          невозможно)
+        </p>
+        <div class="db center btnsCondirm">
+          <button class="btn btnConfirmYes">Да</button>
+          <button class="btn">Нет</button>
+        </div>
+      </form>
+
+      <form action="" class="border editNickname invisible">
+        <button class="btn btnCloseForm">
+          <img class="" src="../img/close.svg" alt="" />
+        </button>
+        <p class="timetableTitle mb">Изменение никнейма</p>
+        <input
+          class="db inputEditNickname border center"
+          type="text"
+          required
+        />
+        <button type="submit" class="center btn db">Сохранить</button>
+      </form>
     </section>
   </body>
 </html>
