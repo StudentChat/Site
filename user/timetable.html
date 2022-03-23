@@ -41,15 +41,20 @@
       <p class="center db timetableTitle">
         Выберите способ отображения расписания
       </p>
-      <button class="center db btn btnTimetable">Использовать ссылку</button>
+      <button id="btnLinkTimetable" class="center db btn btnTimetable">
+        Использовать ссылку
+      </button>
 
-      <form action="" class="center db invisible">
+      <form id="formLinkTimetable" action="" class="center db invisible">
         <input type="text" class="border db center inputTimetable" />
         <button class="btn db center">Сохранить</button>
       </form>
-      <button class="btn db center btnTimetable">Использовать ЕСР</button>
 
-      <form action="#" class="center db">
+      <button id="btnEsrTimetable" class="btn db center btnTimetable">
+        Использовать ЕСР
+      </button>
+
+      <form id="formEsrTimetable" action="#" class="center db invisible">
         <select name="" id="" class="center db inputTimetable" required>
           <option value="">Выберите город</option>
         </select>
@@ -74,5 +79,6 @@
         <button type="submit" class="btn center db">Сохранить</button>
       </form>
     </div>
+    <script src="../js/script.js"></script>
   </body>
 </html>

@@ -10,8 +10,10 @@
 ::-webkit-scrollbar-track {
   color: #fff;
   border: 1px solid black;
+  border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
   background-color: rgb(0, 0, 0);
 }
 ::-webkit-scrollbar:hover {
@@ -95,6 +97,7 @@
   background-color: white;
   position: absolute;
   right: 10px;
+  top: 10px;
   width: 40px;
 }
 .description {
@@ -187,6 +190,7 @@
 .decorationPost {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 .dislikePost {
   background: none;
@@ -352,34 +356,29 @@
 .chatWindow {
   width: 830px;
   height: 660px;
-  display: inline-block;
-  position: absolute;
-  left: 340px;
-  top: 60px;
+  float: right;
+  margin-top: 10px;
   border-radius: 0;
   overflow: auto;
-  padding-bottom: 50px;
+  position: relative;
 }
 .chatWindow::-webkit-scrollbar {
   width: 20px;
 }
 .writeMessage {
   padding-left: 10px;
-  height: 50px;
+  height: 60px;
   min-height: 50px;
-  width: 800px;
+  width: 600px;
   resize: vertical;
   max-height: 300px;
   font-size: 25px;
-  border-radius: 0;
-  line-height: 1;
-  border-bottom-right-radius: 5px;
+  padding: 5px 10px;
 }
 .sendMessage {
-  position: fixed;
-  bottom: 0px;
-  left: 40%;
-  transform: translate(-32%, 0);
+  position: sticky;
+  width: max-content;
+  bottom: 10px;
 }
 .sendMessageBtn {
   position: absolute;
@@ -393,7 +392,7 @@
   left: 10;
 }
 .Dialog {
-  max-width: 90%;
+  max-width: 87%;
   height: max-content;
   word-wrap: normal;
   padding: 10px;
@@ -727,16 +726,22 @@ label {
 }
 /* комментарии в посте */
 .commentWindow {
-  width: 80%;
-  height: 80%;
-  overflow: auto;
+  width: 83%;
+  height: 85%;
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
+  border: 3px solid black;
   transform: translate(-50%, -50%);
   background-color: #fff;
 }
-
+.btnCloseCommentWindow {
+  position: sticky;
+  margin-left: 95%;
+}
+.btnCommentView {
+  cursor: pointer;
+}
 /* просмотр расписания */
 .timetableViewPanel {
   width: 1000px;

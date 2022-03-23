@@ -30,10 +30,10 @@
         <a href="setting.html">
           <img class="headerIcon" src="../img/setting.svg" alt="Настройки"
         /></a>
-        <!-- сделать выход через js -->
-        <a href="../authorization.html">
-          <img class="headerIcon" src="../img/log out.svg" alt="Выход"
-        /></a>
+        <!-- сделать выход -->
+        <a id="exit">
+          <img class="headerIcon" src="../img/log out.svg" alt="Выход" />
+        </a>
       </div>
     </header>
 
@@ -59,8 +59,10 @@
             />
             <p class="nickname dib">olegmamonov10</p>
           </a>
-          <button class="border btn removePostView">Удалить</button>
         </label>
+        <button id="postRemoveBtn" class="border btn removePostView">
+          Удалить
+        </button>
         <div class="blockAddPost">
           <p class="db mb titlePostView">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -98,14 +100,17 @@
             <img class="staticticImage" src="../img/eye.svg" alt="" />
             <p class="statisticNumber">0</p>
           </div>
-          <div class="border statisticElement dib">
+          <button
+            id="btnCommentView"
+            class="border statisticElement dib btnCommentView"
+          >
             <img class="staticticImage" src="../img/comment.svg" alt="" />
             <p class="statisticNumber">0</p>
-          </div>
-          <div class="border statisticElement dib">
+          </button>
+          <btn class="border statisticElement dib">
             <img class="staticticImage" src="../img/disLike.svg" alt="" />
             <p class="statisticNumber">0</p>
-          </div>
+          </btn>
           <div class="border statisticElement dib">
             <img class="staticticImage" src="../img/like.svg" alt="" />
             <p class="statisticNumber">0</p>
@@ -113,7 +118,7 @@
         </div>
       </div>
 
-      <form class="postRemoveConfirm border invisible">
+      <form id="postRemoveConfirm" class="postRemoveConfirm border invisible">
         <p class="timetableTitle mb">
           Вы действительно хотите удалить данный пост? (Восстановить его будет
           невозможно)
@@ -124,15 +129,99 @@
         </div>
       </form>
 
-      <div class="commentWindow border">
-        <div></div>
+      <div id="commentWindow" class="invisible chatWindow border commentWindow">
+        <button
+          class="btnCloseForm btnCloseCommentWindow"
+          id="closeCommentWindow"
+        >
+          <img src="../img/close.svg" alt="Закрыть" />
+        </button>
+        <div class="Dialog border mb center">
+          <img class="logoDialog" src="../img/profile.svg" alt="" />
+          <div class="wrapTextBlock">
+            <h1 class="nicknameDialog">Nickname</h1>
+            <p class="textDialog">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis consequuntur, error culpa quaerat officia quia
+              commodi corporis, nisi exercitationem magni excepturi corrupti a
+              dolores suscipit placeat sint repellendus, aliquam est.
+            </p>
+          </div>
+        </div>
+
+        <div class="Dialog border mb center">
+          <img class="logoDialog" src="../img/profile.svg" alt="" />
+          <div class="wrapTextBlock">
+            <h1 class="nicknameDialog">Nickname</h1>
+            <p class="textDialog">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis consequuntur, error culpa quaerat officia quia
+              commodi corporis, nisi exercitationem magni excepturi corrupti a
+              dolores suscipit placeat sint repellendus, aliquam est.
+            </p>
+          </div>
+        </div>
+
+        <div class="Dialog border mb center">
+          <img class="logoDialog" src="../img/profile.svg" alt="" />
+          <div class="wrapTextBlock">
+            <h1 class="nicknameDialog">Nickname</h1>
+            <p class="textDialog">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis consequuntur, error culpa quaerat officia quia
+              commodi corporis, nisi exercitationem magni excepturi corrupti a
+              dolores suscipit placeat sint repellendus, aliquam est.
+            </p>
+          </div>
+        </div>
+
+        <div class="Dialog border mb center">
+          <img class="logoDialog" src="../img/profile.svg" alt="" />
+          <div class="wrapTextBlock">
+            <h1 class="nicknameDialog">Nickname</h1>
+            <p class="textDialog">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis consequuntur, error culpa quaerat officia quia
+              commodi corporis, nisi exercitationem magni excepturi corrupti a
+              dolores suscipit placeat sint repellendus, aliquam est.
+            </p>
+          </div>
+        </div>
+
+        <div class="Dialog border mb center">
+          <img class="logoDialog" src="../img/profile.svg" alt="" />
+          <div class="wrapTextBlock">
+            <h1 class="nicknameDialog">Nickname</h1>
+            <p class="textDialog">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis consequuntur, error culpa quaerat officia quia
+              commodi corporis, nisi exercitationem magni excepturi corrupti a
+              dolores suscipit placeat sint repellendus, aliquam est.
+            </p>
+          </div>
+        </div>
+
+        <div class="Dialog border mb center">
+          <img class="logoDialog" src="../img/profile.svg" alt="" />
+          <div class="wrapTextBlock">
+            <h1 class="nicknameDialog">Nickname</h1>
+            <p class="textDialog">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis consequuntur, error culpa quaerat officia quia
+              commodi corporis, nisi exercitationem magni excepturi corrupti a
+              dolores suscipit placeat sint repellendus, aliquam est.
+            </p>
+          </div>
+        </div>
+
         <form action="#" class="sendMessage center db">
-          <input class="writeMessage border" type="text" />
+          <textarea class="writeMessage border" type="text"></textarea>
           <button type="submit" class="searchMessageBtn sendMessageBtn">
             <img src="../img/enter.svg" alt="" width="40px" />
           </button>
         </form>
       </div>
     </section>
+    <script src="../js/script.js"></script>
   </body>
 </html>
