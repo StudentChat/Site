@@ -25,6 +25,11 @@
 .dib {
   display: inline-block;
 }
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
 .border {
   border: solid 1px black;
   border-radius: 5px;
@@ -37,23 +42,23 @@
 }
 /* вкладка авторизации */
 .authHeader {
-  width: 500px;
-  margin-top: 5%;
+  height: 100px;
+  display: block;
+}
+.authLogo {
+  margin-top: 50px;
+  width: max-content;
 }
 .authForm {
-  width: 300px;
+  width: 400px;
   padding: 10px 20px;
-  z-index: 1;
+  margin: 10px;
+  margin-top: 50px;
+  vertical-align: top;
+  display: inline-block;
 }
 .authCenterScreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: max-content;
 }
 .btn {
   color: black;
@@ -66,6 +71,7 @@
   height: 40px;
   font-weight: 600;
   vertical-align: top;
+  width: max-content;
 }
 .btns {
   margin-top: auto;
@@ -83,13 +89,11 @@
   margin-bottom: 10px;
   text-align: center;
 }
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
+
 .link {
   text-align: center;
+  text-decoration: none;
+  color: black;
 }
 .btnCloseForm {
   border-radius: 5px;
@@ -100,12 +104,12 @@
   top: 10px;
   width: 40px;
 }
-.description {
+/* .description {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 10px;
-}
-.modalWindow {
+} */
+/* .modalWindow {
   position: fixed;
   top: 0;
   left: 0;
@@ -122,19 +126,16 @@
   padding-bottom: 0;
   position: relative;
   z-index: 2;
-}
+} */
 .invisible {
   display: none;
 }
-.confirmInput {
-  width: 90%;
+.inputPassword {
+  width: 100%;
   display: block;
+  padding: 5px;
 }
-.centerLogo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 /* вкладка стена */
 .container {
   width: 1200px;
@@ -325,12 +326,12 @@
 }
 .message {
   position: relative;
-  height: 52px;
+  height: 75px;
   cursor: pointer;
 }
 .iconUserMessage {
   width: 50px;
-  height: 50px;
+  height: 100%;
   border-right: 1px solid black;
   border-bottom: none;
   border-left: none;
@@ -438,6 +439,10 @@ label {
 }
 .mb {
   margin-bottom: 20px;
+}
+.priceVacancy {
+  font-size: 30px;
+  font-weight: bold;
 }
 /* страница faq */
 .titleFAQ {
@@ -610,6 +615,9 @@ label {
   width: 90%;
   height: 40px;
 }
+.postProfile {
+  height: max-content;
+}
 /* страница настроек */
 .settingForm {
   width: 1000px;
@@ -674,7 +682,7 @@ label {
   font-family: "open-sans", sans-serif;
 }
 .subjectPostView {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .FilesPostView {
   height: 100px;
@@ -723,6 +731,14 @@ label {
 }
 .btnsCondirm {
   width: max-content;
+}
+/* просмотр вакансии */
+.price {
+  border: 2px solid black;
+  padding: 5px;
+}
+.vacancyCategory {
+  margin-left: 30px;
 }
 /* комментарии в посте */
 .commentWindow {

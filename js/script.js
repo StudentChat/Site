@@ -22,8 +22,7 @@ setListener(btnOpenWindow, "click", () => {
   // if (emailValid == true) {
   //   emailForm.classList.remove("validFalse");
   //   emailForm.classList.add("validTrue");
-  openWindow.classList.remove("invisible");
-  modalWindow.classList.remove("invisible");
+  window.location.replace("user/wall.html");
   // } else {
   //   emailForm.classList.remove("validTrue");
   //   emailForm.classList.add("validFalse");
@@ -34,7 +33,6 @@ const close = document.getElementById("close");
 setListener(close, "click", () => {
   openWindow.classList.add("invisible");
   modalWindow.classList.add("invisible");
-  overlay.classList.add("invisible");
   window.location.replace("authorization.html");
 });
 
@@ -99,6 +97,5 @@ setListener(exit, "click", () => {
 //показ формы вакансии при клике на ее карточку
 const viewVacancy = document.getElementById("viewVacancy");
 setListener(viewVacancy, "click", () => {
-  window.location.replace("viewPost.html");
-  postRemoveBtn.classList.add("invisible");
+  window.location.replace("viewVacancy.html");
 });

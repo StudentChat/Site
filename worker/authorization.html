@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Авторизация</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Авторизация работодателя</title>
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../img/Logo-light.svg" />
   </head>
   <body>
     <header>
-      <div class="authHeader center centerLogo">
+      <div class="authHeader center">
         <a class="center db authLogo" href="authorization.html">
-          <img src="img/Logo-image.svg" alt="Логотип" width="500px"
+          <img src="../img/Logo-image-Worker.svg" alt="Логотип" width="500px"
         /></a>
       </div>
     </header>
@@ -36,7 +36,7 @@
             placeholder="Введите пароль"
             required
           />
-          <button id="btnOpenWindow" class="btn btnSubmit center" type="submit">
+          <button id="" class="btn btnSubmit center" type="submit">
             Войти
           </button>
         </form>
@@ -53,33 +53,29 @@
           />
           <input
             class="border center inputPassword"
-            name="confirmPass"
-            type="text"
-            placeholder="Введите никнейм"
-            required
-          />
-          <input
-            class="border center inputPassword"
             name="pass"
             type="password"
             placeholder="Введите пароль"
             required
           />
           <input
-            class="border center inputPassword mb"
+            class="border center inputPassword"
             name="confirmPass"
             type="password"
             placeholder="Повторите пароль"
             required
           />
-
-          <button id="btnOpenWindow" class="btn btnSubmit center" type="submit">
+          <input
+            class="border center inputPassword mb"
+            name="confirmPass"
+            type="text"
+            placeholder="Введите название организации"
+            required
+          />
+          <button id="" class="btn btnSubmit center" type="submit">
             Зарегистрироваться
           </button>
         </form>
-        <p class="btn center mb">
-          <a class="link" href="worker/authorization.html">Для работодателей</a>
-        </p>
       </div>
     </section>
 
@@ -104,6 +100,6 @@
       </form>
     </div> -->
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
