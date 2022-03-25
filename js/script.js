@@ -95,7 +95,25 @@ setListener(exit, "click", () => {
 });
 
 //показ формы вакансии при клике на ее карточку
-const viewVacancy = document.getElementById("viewVacancy");
-setListener(viewVacancy, "click", () => {
-  window.location.replace("viewVacancy.html");
+// const viewVacancy = document.querySelectorAll('[id="viewVacancy"]');
+// setListener(viewVacancy, "click", () => {
+//   window.location.replace("viewVacancy.html");
+// });
+
+const btnsRemovePost = document.querySelectorAll('[id="btnRemovePost"]');
+const removePost = document.getElementById("removePost");
+for (let btnRemovePost of btnsRemovePost) {
+  btnRemovePost.addEventListener("click", () => {
+    removePost.classList.remove("invisible");
+  });
+}
+
+const btnEditNickname = document.getElementById("btnEditNickname");
+const editNickname = document.getElementById("editNickname");
+const closeEditNickname = document.getElementById("closeEditNickname");
+setListener(btnEditNickname, "click", () => {
+  editNickname.classList.remove("invisible");
+});
+setListener(closeEditNickname, "click", () => {
+  editNickname.classList.add("invisible");
 });

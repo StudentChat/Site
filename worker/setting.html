@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Настройки</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/Logo-light.svg" />
+  </head>
+  <body>
+    <header class="header center">
+      <a class="logo" href="vacancy.html"
+        ><img class="logo" src="../img/Logo-image-Worker.svg" alt="Логотип"
+      /></a>
+      <div class="btns">
+        <a class="btn" href="vacancy.html">Вакансии</a>
+        <a class="btn" href="chat.html">Чат</a>
+        <a class="btn" href="faq.html">О нас</a>
+      </div>
+      <div class="btns">
+        <a href="addPost.html"
+          ><img class="headerIcon" src="../img/add.svg" alt="Добавить пост"
+        /></a>
+        <a href="profile.html"
+          ><img class="headerIcon" src="../img/profile.svg" alt="Профиль"
+        /></a>
+        <a href="setting.html">
+          <img class="headerIcon" src="../img/setting.svg" alt="Настройки"
+        /></a>
+        <!-- сделать выход через js -->
+        <a href="../authorization.html">
+          <img class="headerIcon" src="../img/log out.svg" alt="Выход"
+        /></a>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="settingForm border db center">
+        <p>Смена E-mail</p>
+        <div class="wrap">
+          <form class="dib" action="">
+            <input
+              class="border esrInput"
+              type="text"
+              placeholder="Введите E-mail"
+            />
+            <button class="btn">Отправить код</button>
+          </form>
+          <form class="dib" action="">
+            <input
+              class="esrInput border"
+              type="text"
+              placeholder="Введите код"
+            />
+            <button class="border btn">Изменить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

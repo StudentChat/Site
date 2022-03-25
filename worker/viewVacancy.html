@@ -10,14 +10,12 @@
   </head>
   <body>
     <header class="header center">
-      <a class="logo" href="wall.html"
-        ><img class="logo" src="../img/Logo-image.svg" alt="Логотип"
+      <a class="logo" href="vacancy.html"
+        ><img class="logo" src="../img/Logo-image-Worker.svg" alt="Логотип"
       /></a>
       <div class="btns">
-        <a class="btn" href="wall.html">Стена</a>
-        <a class="btn" href="timetable.html">Расписание</a>
-        <a class="btn" href="chat.html">Чат</a>
         <a class="btn" href="vacancy.html">Вакансии</a>
+        <a class="btn" href="chat.html">Чат</a>
         <a class="btn" href="faq.html">О нас</a>
       </div>
       <div class="btns">
@@ -30,10 +28,10 @@
         <a href="setting.html">
           <img class="headerIcon" src="../img/setting.svg" alt="Настройки"
         /></a>
-        <!-- сделать выход -->
-        <a id="exit">
-          <img class="headerIcon" src="../img/log out.svg" alt="Выход" />
-        </a>
+        <!-- сделать выход через js -->
+        <a href="../authorization.html">
+          <img class="headerIcon" src="../img/log out.svg" alt="Выход"
+        /></a>
       </div>
     </header>
 
@@ -54,7 +52,7 @@
           </div>
 
           <a
-            href="profileWorker.html"
+            href="profile.html"
             class="profilePost profilePostView db decorationPost"
           >
             <img
@@ -66,7 +64,9 @@
             <p class="nickname dib">ООО "прайс"</p>
           </a>
         </label>
-
+        <button id="postRemoveBtn" class="border btn removePostView">
+          Удалить
+        </button>
         <div class="blockAddPost">
           <p class="db mb titlePostView">Программист Биллинга, 1С</p>
           <p class="db dib mb">Тип Вакансии:</p>
@@ -94,7 +94,6 @@
             </label>
           </div>
         </div>
-        <a href="chat.html" class="btn center db">Откликнуться</a>
         <div class="statisticPostView">
           <div class="border statisticElement dib">
             <img class="staticticImage" src="../img/eye.svg" alt="" />
@@ -120,8 +119,8 @@
 
       <form id="postRemoveConfirm" class="postRemoveConfirm border invisible">
         <p class="timetableTitle mb">
-          Вы действительно хотите удалить данный пост? (Восстановить его будет
-          невозможно)
+          Вы действительно хотите удалить данную вакансию? (Восстановить ее
+          будет невозможно)
         </p>
         <div class="db center btnsCondirm">
           <button type="submit" class="btn btnConfirmYes">Да</button>
@@ -151,7 +150,7 @@
         <div class="Dialog border mb center">
           <img class="logoDialog" src="../img/profile.svg" alt="" />
           <div class="wrapTextBlock">
-            <h1 class="nicknameDialog">Николай</h1>
+            <h1 class="nicknameDialog">olegmamonov10</h1>
             <p class="textDialog">
               Век живи - век учись тому, как следует жить.
             </p>
@@ -172,7 +171,7 @@
         <div class="Dialog border mb center">
           <img class="logoDialog" src="../img/profile.svg" alt="" />
           <div class="wrapTextBlock">
-            <h1 class="nicknameDialog">Николай</h1>
+            <h1 class="nicknameDialog">olegmamonov10</h1>
             <p class="textDialog">
               Все, что происходит в наше время и что мы видим собственными
               глазами, удивляет нас гораздо меньше, нежели события прошлого, о
@@ -196,7 +195,7 @@
         <div class="Dialog border mb center">
           <img class="logoDialog" src="../img/profile.svg" alt="" />
           <div class="wrapTextBlock">
-            <h1 class="nicknameDialog">Николай</h1>
+            <h1 class="nicknameDialog">olegmamonov10</h1>
             <p class="textDialog">
               В основе искусства и литературы, как и в основе войны, лежат
               деньги.
