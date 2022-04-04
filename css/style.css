@@ -446,7 +446,8 @@ label {
 }
 /* страница faq */
 .titleFAQ {
-  font-size: 32px;
+  font-size: 30px;
+  margin-top: 5px;
 }
 .textFAQ {
   font-size: 26px;
@@ -462,10 +463,19 @@ label {
 .formFaq {
   padding: 10px;
   width: 420px;
-  margin-bottom: 50%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 .inputFaq {
   width: 390px;
+}
+.requisites {
+  text-decoration: none;
+  color: blue;
 }
 /* страница добавить пост */
 .formAddPost {
@@ -783,4 +793,11 @@ label {
   border-top-right-radius: 0;
   width: 1000px;
   height: 500px;
+}
+/* кнопка открытия окна обратной связи */
+.btnQuestion {
+  position: fixed;
+  right: 25px;
+  bottom: 50px;
+  background: none;
 }

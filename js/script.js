@@ -100,6 +100,7 @@ setListener(exit, "click", () => {
 //   window.location.replace("viewVacancy.html");
 // });
 
+// форма удаления поста
 const btnsRemovePost = document.querySelectorAll('[id="btnRemovePost"]');
 const removePost = document.getElementById("removePost");
 for (let btnRemovePost of btnsRemovePost) {
@@ -108,6 +109,7 @@ for (let btnRemovePost of btnsRemovePost) {
   });
 }
 
+// открытие закрытие формы смены никнейма
 const btnEditNickname = document.getElementById("btnEditNickname");
 const editNickname = document.getElementById("editNickname");
 const closeEditNickname = document.getElementById("closeEditNickname");
@@ -116,4 +118,16 @@ setListener(btnEditNickname, "click", () => {
 });
 setListener(closeEditNickname, "click", () => {
   editNickname.classList.add("invisible");
+});
+
+// открытие закрытие формы вопроса
+openFormFaq = document.getElementById("openFormFaq");
+formFaq = document.getElementById("formFaq");
+closeFormFaq = document.getElementById("closeFormFaq");
+
+setListener(openFormFaq, "click", () => {
+  formFaq.classList.remove("invisible");
+});
+setListener(closeFormFaq, "click", () => {
+  formFaq.classList.add("invisible");
 });
