@@ -198,10 +198,14 @@
   border: none;
   padding: 0;
 }
+
 .likePost {
   background: none;
   border: none;
   padding: 0;
+}
+.likePostClick {
+  background: red;
 }
 .profilePost {
   position: relative;

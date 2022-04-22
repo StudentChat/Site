@@ -131,3 +131,11 @@ setListener(openFormFaq, "click", () => {
 setListener(closeFormFaq, "click", () => {
   formFaq.classList.add("invisible");
 });
+
+//клик по лайку
+let likePost = document.getElementById("likePost");
+let imageLikePost = document.getElementById("imageLikePost");
+setListener(likePost, "click", () => {
+  imageLikePost.classList.add("likePostClick");
+  console.log("click");
+});
