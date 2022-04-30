@@ -14,11 +14,11 @@
         ><img class="logo" src="../img/Logo-image.svg" alt="Логотип"
       /></a>
       <div class="btns">
-        <a class="btn" href="wall.html">Стена</a>
-        <a class="btn" href="timetable.html">Расписание</a>
-        <a class="btn" href="chat.html">Чат</a>
-        <a class="btn" href="vacancy.html">Вакансии</a>
-        <a class="btn" href="faq.html">О нас</a>
+        <a class="btn btnLink" href="wall.html">Стена</a>
+        <a class="btn btnLink" href="timetable.html">Расписание</a>
+        <a class="btn btnLink" href="chat.html">Чат</a>
+        <a class="btn btnLink" href="vacancy.html">Вакансии</a>
+        <a class="btn btnLink" href="faq.html">О нас</a>
       </div>
       <div class="btns">
         <a href="addPost.html"
@@ -53,7 +53,7 @@
         </label>
         <div class="center db nicknameField">
           <p class="nicknameUser dib">olegmamonov10</p>
-          <button class="btnEditNicknameUser">
+          <button id="btnEditNickname" class="btnEditNicknameUser">
             <img class="editNicknameUser" src="../img/pencil.svg" alt="" />
           </button>
         </div>
@@ -296,8 +296,8 @@
         </div>
       </form>
 
-      <form action="" class="border editNickname invisible">
-        <button class="btn btnCloseForm">
+      <form id="editNickname" action="" class="border editNickname invisible">
+        <button id="closeEditNickname" class="btn btnCloseForm">
           <img class="" src="../img/close.svg" alt="" />
         </button>
         <p class="timetableTitle mb">Изменение никнейма</p>
@@ -335,6 +335,10 @@
         <button class="center btn db" type="submit">Отправить</button>
       </form>
     </section>
+    <button id="backToTop" class="btn filterIcon btnPageUp">
+      <img src="../img/pageUp.svg" alt="" width="50px" height="50px" />
+    </button>
+    <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

@@ -14,11 +14,11 @@
         ><img class="logo" src="../img/Logo-image.svg" alt="Логотип"
       /></a>
       <div class="btns">
-        <a class="btn" href="wall.html">Стена</a>
-        <a class="btn" href="timetable.html">Расписание</a>
-        <a class="btn" href="chat.html">Чат</a>
-        <a class="btn" href="vacancy.html">Вакансии</a>
-        <a class="btn" href="faq.html">О нас</a>
+        <a class="btn btnLink" href="wall.html">Стена</a>
+        <a class="btn btnLink" href="timetable.html">Расписание</a>
+        <a class="btn btnLink" href="chat.html">Чат</a>
+        <a class="btn btnLink" href="vacancy.html">Вакансии</a>
+        <a class="btn btnLink" href="faq.html">О нас</a>
       </div>
       <div class="btns">
         <a href="addPost.html"
@@ -57,7 +57,17 @@
           <button class="iconUserMessage">
             <img src="../img/profile.svg" alt="" width="50px" />
           </button>
-          <h1 class="nicknameMessage">Николай</h1>
+          <h1 class="nicknameMessage singlelineUser">
+            Николай Николай Николай Николай Николай
+          </h1>
+          <img
+            id="btnDeleteChat"
+            class="deleteChat"
+            src="../img/DELETE.svg"
+            alt=""
+            width="20px"
+            height="20px"
+          />
           <p class="textMessage singlelineTitle">
             В основе искусства и литературы, как и в основе войны, лежат деньги.
           </p>
@@ -67,7 +77,15 @@
           <button class="iconUserMessage">
             <img src="../img/profile.svg" alt="" width="50px" />
           </button>
-          <h1 class="nicknameMessage">Иван</h1>
+          <h1 class="nicknameMessage singlelineUser">Иван</h1>
+          <img
+            id="btnDeleteChat"
+            class="deleteChat"
+            src="../img/DELETE.svg"
+            alt=""
+            width="20px"
+            height="20px"
+          />
           <p class="textMessage singlelineTitle">
             В основе искусства и литературы, как и в основе войны, лежат деньги.
           </p>
@@ -77,7 +95,15 @@
           <button class="iconUserMessage">
             <img src="../img/profile.svg" alt="" width="50px" />
           </button>
-          <h1 class="nicknameMessage">Александр</h1>
+          <h1 class="nicknameMessage singlelineUser">Александр</h1>
+          <img
+            id="btnDeleteChat"
+            class="deleteChat"
+            src="../img/DELETE.svg"
+            alt=""
+            width="20px"
+            height="20px"
+          />
           <p class="textMessage singlelineTitle">
             В основе искусства и литературы, как и в основе войны, лежат деньги.
           </p>
@@ -186,6 +212,19 @@
         <button class="center btn db" type="submit">Отправить</button>
       </form>
     </section>
+
+    <form id="formDeleteChat" class="formDeleteChat invisible">
+      <p class="mb timetableTitle">
+        Вы действительно желаете удалить данный диалог(восстановить его будет
+        невозможно!)
+      </p>
+      <div class="btns center">
+        <button id="btnDeleteChatYes" class="btn btnDanger">ДА</button>
+        <button id="btnDeleteChatNo" class="btn">Нет</button>
+      </div>
+    </form>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

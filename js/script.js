@@ -139,3 +139,33 @@ setListener(likePost, "click", () => {
   imageLikePost.classList.add("likePostClick");
   console.log("click");
 });
+
+// кнопка возвращения наверх
+$(window).scroll(function () {
+  let scrolled = $(window).scrollTop();
+  console.log(scrolled);
+  if (scrolled > 200) {
+    $("#backToTop").addClass("active");
+  } else {
+    $("#backToTop").removeClass("active");
+  }
+});
+
+$("#backToTop").click(function () {
+  $("body,html").animate({ scrollTop: 0 }, 1000);
+});
+
+// удаление чатов
+const btnsDeleteChat = document.querySelectorAll('[id="btnDeleteChat"]');
+const formDeleteChat = document.getElementById("formDeleteChat");
+const btnDeleteChatNo = document.getElementById("btnDeleteChatNo");
+
+setListener(btnDeleteChatNo, "click", () => {
+  formDeleteChat.classList.add("invisible");
+});
+
+for (let btnDeleteChat of btnsDeleteChat) {
+  btnDeleteChat.addEventListener("click", () => {
+    formDeleteChat.classList.remove("invisible");
+  });
+}
