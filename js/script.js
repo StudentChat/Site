@@ -143,7 +143,6 @@ setListener(likePost, "click", () => {
 // кнопка возвращения наверх
 $(window).scroll(function () {
   let scrolled = $(window).scrollTop();
-  console.log(scrolled);
   if (scrolled > 200) {
     $("#backToTop").addClass("active");
   } else {
@@ -169,3 +168,19 @@ for (let btnDeleteChat of btnsDeleteChat) {
     formDeleteChat.classList.remove("invisible");
   });
 }
+// настройки пользователя - расписание
+const linkTimetableSetting = document.getElementById("linkTimetableSetting");
+const esrTimetableSetting = document.getElementById("esrTimetableSetting");
+let settingTimetable = document.getElementById("settingTimetable");
+setListener(settingTimetable, "change", () => {
+  if (settingTimetable.value == "none") {
+    linkTimetableSetting.classList.add("invisible");
+    esrTimetableSetting.classList.add("invisible");
+  } else if (settingTimetable.value == "link") {
+    linkTimetableSetting.classList.remove("invisible");
+    esrTimetableSetting.classList.add("invisible");
+  } else if (settingTimetable.value == "ESR") {
+    linkTimetableSetting.classList.add("invisible");
+    esrTimetableSetting.classList.remove("invisible");
+  }
+});

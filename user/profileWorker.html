@@ -40,14 +40,15 @@
     <section class="container">
       <div class="userSection">
         <label class="uploadPhoto border db center">
+          <input class="File" type="file" multiple accept="image/*" required />
           <img
-            class="center db "
-            src=""
+            class="center db imgUpload"
+            src="../img/upload.svg"
             alt=""
-            width="100%"
-            height="100%"
+            width="100px"
+            height="100px"
           />
-          
+          <p class="textUpload">Загрузить фото</p>
           <a href="chat.html" class="btn btnMessage">Написать</a>
         </label>
         <div class="center db nicknameField">
@@ -58,7 +59,7 @@
 
       <div class="postsWall">
         <div class="border post postProfile">
-          <a href="viewPost.html" class="decorationPost">
+          <a href="viewVacancy.html" class="decorationPost">
             <img
               src="https://demiart.ru/forum/uploads14/post-2420685-1400076698.jpg"
               alt="Фото поста"
