@@ -1,1 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,1A11,11,0,1,0,23,12,11.013,11.013,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9.011,9.011,0,0,1,12,21Zm1-4.5v2H11v-2Zm3-7a3.984,3.984,0,0,1-1.5,3.122A3.862,3.862,0,0,0,13.063,15H11.031a5.813,5.813,0,0,1,2.219-3.936A2,2,0,0,0,13.1,7.832a2.057,2.057,0,0,0-2-.14A1.939,1.939,0,0,0,10,9.5,1,1,0,0,1,8,9.5V9.5a3.909,3.909,0,0,1,2.319-3.647,4.061,4.061,0,0,1,3.889.315A4,4,0,0,1,16,9.5Z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg19"
+   sodipodi:docname="question.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs23" />
+  <sodipodi:namedview
+     id="namedview21"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="16"
+     inkscape:cx="14.59375"
+     inkscape:cy="11.3125"
+     inkscape:window-width="1440"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <g
+       id="g4184">
+      <ellipse
+         style="fill:#ffffff;fill-rule:evenodd"
+         id="path3442"
+         cx="11.842272"
+         cy="11.902098"
+         rx="10.407728"
+         ry="10.606602" />
+      <path
+         d="M 12,1 C 2.1993651,1 -2.7070349,12.848524 4.2222205,19.777779 11.151476,26.707035 23,21.800635 23,12 22.992836,5.9278374 18.072163,1.0071635 12,1 Z m 0,20 C 3.9812987,21 -0.03302852,11.305753 5.6363622,5.6363622 11.305753,-0.03302852 21,3.9812987 21,12 c -0.0061,4.96805 -4.03195,8.993939 -9,9 z m 1,-4.5 v 2 h -2 v -2 z m 3,-7 c 0.0022,1.214945 -0.550119,2.36449 -1.5,3.122 -0.757423,0.586946 -1.269597,1.434511 -1.437,2.378 H 11.031 C 11.209635,13.442449 12.009829,12.023088 13.25,11.064 14.31049,10.21525 14.234545,8.5788766 13.1,7.832 12.502737,7.4416128 11.745826,7.388629 11.1,7.692 10.407772,8.0237933 10,9.5 10,9.5 H 8 C 8.3488028,7.5500467 8.9690643,6.5426434 10.319,5.853 11.584169,5.2875862 13.05032,5.406341 14.208,6.168 15.326028,6.9081274 15.998868,8.1591891 16,9.5 Z"
+         id="path17"
+         sodipodi:nodetypes="cscccsccccccccccccccccccc" />
+    </g>
+  </g>
+</svg>

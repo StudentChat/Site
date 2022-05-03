@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+<svg width="23.999999999999996" height="23.999999999999996" xmlns="http://www.w3.org/2000/svg">
+ <g stroke="null">
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="3.363636" width="3.363636" y="-1" x="-1" stroke="null"/>
+ </g>
+
+ <g stroke="null">
+  <title>Layer 1</title>
+  <rect fill="null" stroke-width="null" stroke-opacity="null" fill-opacity="null" x="-1.196545" y="-0.654293" width="26.220304" height="25.615552" id="svg_1" stroke="null"/>
+  <rect fill="null" stroke="null" stroke-width="null" stroke-opacity="null" fill-opacity="null" x="-0.894169" y="7.442765" width="5.529158" height="0.647948" id="svg_3"/>
+  <path stroke="null" id="svg_2" d="m24.585301,-4.078487l-25.170602,0c-1.995678,0 -3.595803,1.60785 -3.595803,3.573005l0,25.010966c0,1.965155 1.600125,3.573005 3.595803,3.573005l25.170602,0c1.977695,0 3.595803,-1.60785 3.595803,-3.573005l0,-25.010966c0,-1.965155 -1.618109,-3.573005 -3.595803,-3.573005zm-3.595803,17.86499l-7.191596,0l0,7.145987l-3.595803,0l0,-7.145987l-7.191607,0l0,-3.573005l7.191607,0l0,-7.145987l3.595803,0l0,7.145987l7.191596,0l0,3.573005z" fill="#ffffff"/>
+ </g>
+</svg>

@@ -74,12 +74,20 @@ const btnEsrTimetable = document.getElementById("btnEsrTimetable");
 const formEsrTimetable = document.getElementById("formEsrTimetable");
 
 setListener(btnLinkTimetable, "click", () => {
-  formLinkTimetable.classList.remove("invisible");
-  formEsrTimetable.classList.add("invisible");
+  if (formLinkTimetable.classList.contains("invisible") == true) {
+    formLinkTimetable.classList.remove("invisible");
+    formEsrTimetable.classList.add("invisible");
+  } else if (formLinkTimetable.classList.contains("invisible") == false) {
+    formLinkTimetable.classList.add("invisible");
+  }
 });
 setListener(btnEsrTimetable, "click", () => {
-  formLinkTimetable.classList.add("invisible");
-  formEsrTimetable.classList.remove("invisible");
+  if (formEsrTimetable.classList.contains("invisible") == true) {
+    formLinkTimetable.classList.add("invisible");
+    formEsrTimetable.classList.remove("invisible");
+  } else if (formEsrTimetable.classList.contains("invisible") == false) {
+    formEsrTimetable.classList.add("invisible");
+  }
 });
 //Подтверждение удаления поста
 const postRemoveConfirm = document.getElementById("postRemoveConfirm");
@@ -133,13 +141,10 @@ setListener(closeFormFaq, "click", () => {
 });
 
 //клик по лайку
-let likePost = document.getElementById("likePost");
-let imageLikePost = document.getElementById("imageLikePost");
-setListener(likePost, "click", () => {
-  imageLikePost.classList.add("likePostClick");
-  console.log("click");
-});
-
+// const likePost = document.getElementById("likePost");
+// likePost.addEventListener("click", () => {
+//   likePost.classList.add("active");
+// });
 // кнопка возвращения наверх
 $(window).scroll(function () {
   let scrolled = $(window).scrollTop();
