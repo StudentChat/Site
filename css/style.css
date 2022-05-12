@@ -208,23 +208,26 @@ html {
   border: none;
   padding: 0;
 }
-
 .likePost {
   background: none;
   border: none;
   padding: 0;
 }
-.likePost.active {
+.likePost svg.active {
   fill: red;
+}
+.dislikePost svg.active {
+  fill: blue;
 }
 .profilePost {
   position: relative;
   border-radius: 0px;
   height: 50px;
   background-color: white;
-  width: 200px;
+  width: 100%;
+  max-width: 320px;
   border: solid 2px black;
-  padding: 10px 50px;
+  padding: 10px 0px 10px 50px;
   margin-bottom: auto;
   margin: 10px;
 }
@@ -236,10 +239,11 @@ html {
 }
 .nickname {
   height: 30px;
-  width: 140px;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
 }
 .downPanel {
   position: absolute;
@@ -248,6 +252,7 @@ html {
   bottom: 0px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .postsWall {
   display: flex;
@@ -390,7 +395,7 @@ html {
   height: 60px;
   min-height: 50px;
   width: 600px;
-  resize: vertical;
+  resize: none;
   max-height: 300px;
   font-size: 25px;
   padding: 5px 10px;

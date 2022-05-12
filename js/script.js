@@ -140,11 +140,21 @@ setListener(closeFormFaq, "click", () => {
   formFaq.classList.add("invisible");
 });
 
-//клик по лайку
-// const likePost = document.getElementById("likePost");
-// likePost.addEventListener("click", () => {
-//   likePost.classList.add("active");
-// });
+// клик по дизлайку/лайку
+let likesPosts = document.querySelectorAll('[id="likePost"]');
+let likesPostsImages = document.querySelectorAll('[id="likePostImage"]');
+
+let dislikesPosts = document.querySelectorAll('[id="dislikePost"]');
+let dislikesPostsImages = document.querySelectorAll('[id="dislikePostImage"]');
+
+for (let dislikePost of dislikesPosts) {
+  for (let dislikePostImage of dislikesPostsImages) {
+    setListener(dislikePost, "click", () => {
+      dislikePostImage.classList.toggle("active");
+    });
+  }
+}
+
 // кнопка возвращения наверх
 $(window).scroll(function () {
   let scrolled = $(window).scrollTop();
@@ -188,4 +198,11 @@ setListener(settingTimetable, "change", () => {
     linkTimetableSetting.classList.add("invisible");
     esrTimetableSetting.classList.remove("invisible");
   }
+});
+// автоматическое растягивание textArea
+const writeMessage = document.getElementById("writeMessage");
+writeMessage.style.height = 50 + "px";
+
+$(document).on("input", "textarea", function () {
+  $(this).outerHeight(38).outerHeight(this.scrollHeight);
 });
