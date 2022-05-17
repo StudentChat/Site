@@ -31,9 +31,9 @@
           <img class="headerIcon" src="../img/setting.svg" alt="Настройки"
         /></a>
         <!-- сделать выход -->
-        <a id="exit">
-          <img class="headerIcon" src="../img/log out.svg" alt="Выход" />
-        </a>
+        <a href="../index.php">
+          <img class="headerIcon" src="../img/log out.svg" alt="Выход"
+        /></a>
       </div>
     </header>
 
