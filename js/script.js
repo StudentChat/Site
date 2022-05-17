@@ -8,6 +8,12 @@ const setListener = (element, type, func) => {
     element.removeEventListener(type, func);
   };
 };
+const heightField = (element) => {
+  if (element == null) {
+    return;
+  }
+  element.style.height = 50 + "px";
+};
 
 const btnOpenWindow = document.getElementById("btnOpenWindow");
 const openWindow = document.getElementById("invisible");
@@ -22,7 +28,7 @@ setListener(btnOpenWindow, "click", () => {
   // if (emailValid == true) {
   //   emailForm.classList.remove("validFalse");
   //   emailForm.classList.add("validTrue");
-  window.location.replace("user/wall.html");
+  window.location.replace("user/wall.php");
   // } else {
   //   emailForm.classList.remove("validTrue");
   //   emailForm.classList.add("validFalse");
@@ -33,13 +39,13 @@ const close = document.getElementById("close");
 setListener(close, "click", () => {
   openWindow.classList.add("invisible");
   modalWindow.classList.add("invisible");
-  window.location.replace("authorization.html");
+  window.location.replace("authorization.php");
 });
 
 const logIn = document.getElementById("logIn");
 setListener(logIn, "click", () => {
   //проверка наличия пользователя в бд
-  window.location.replace("user/wall.html");
+  window.location.replace("user/wall.php");
 });
 
 // просмотр комментариев к посту
@@ -99,13 +105,13 @@ setListener(postRemoveBtn, "click", () => {
 //Выход
 const exit = document.getElementById("exit");
 setListener(exit, "click", () => {
-  window.location.replace("../authorization.html");
+  window.location.replace("../authorization.php");
 });
 
 //показ формы вакансии при клике на ее карточку
 // const viewVacancy = document.querySelectorAll('[id="viewVacancy"]');
 // setListener(viewVacancy, "click", () => {
-//   window.location.replace("viewVacancy.html");
+//   window.location.replace("viewVacancy.php");
 // });
 
 // форма удаления поста
@@ -140,20 +146,20 @@ setListener(closeFormFaq, "click", () => {
   formFaq.classList.add("invisible");
 });
 
-// клик по дизлайку/лайку
-let likesPosts = document.querySelectorAll('[id="likePost"]');
-let likesPostsImages = document.querySelectorAll('[id="likePostImage"]');
+// // клик по дизлайку/лайку
+// let likesPosts = document.querySelectorAll('[id="likePost"]');
+// let likesPostsImages = document.querySelectorAll('[id="likePostImage"]');
 
-let dislikesPosts = document.querySelectorAll('[id="dislikePost"]');
-let dislikesPostsImages = document.querySelectorAll('[id="dislikePostImage"]');
+// let dislikesPosts = document.querySelectorAll('[id="dislikePost"]');
+// let dislikesPostsImages = document.querySelectorAll('[id="dislikePostImage"]');
 
-for (let dislikePost of dislikesPosts) {
-  for (let dislikePostImage of dislikesPostsImages) {
-    setListener(dislikePost, "click", () => {
-      dislikePostImage.classList.toggle("active");
-    });
-  }
-}
+// for (let dislikePost of dislikesPosts) {
+//   for (let dislikePostImage of dislikesPostsImages) {
+//     setListener(dislikePost, "click", () => {
+//       dislikePostImage.classList.toggle("active");
+//     });
+//   }
+// }
 
 // кнопка возвращения наверх
 $(window).scroll(function () {
@@ -200,8 +206,8 @@ setListener(settingTimetable, "change", () => {
   }
 });
 // автоматическое растягивание textArea
-const writeMessage = document.getElementById("writeMessage");
-writeMessage.style.height = 50 + "px";
+let writeMessage = document.getElementById("writeMessage");
+heightField(writeMessage);
 
 $(document).on("input", "textarea", function () {
   $(this).outerHeight(38).outerHeight(this.scrollHeight);
