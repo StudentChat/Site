@@ -15,25 +15,6 @@ const heightField = (element) => {
   element.style.height = 50 + "px";
 };
 
-const btnOpenWindow = document.getElementById("btnOpenWindow");
-const openWindow = document.getElementById("invisible");
-const emailForm = document.getElementById("email");
-const modalWindow = document.getElementById("modalWindow");
-//Валидация email
-setListener(btnOpenWindow, "click", () => {
-  // let email = document.getElementById("email").value;
-  // let pattern =
-  //   /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  // let emailValid = pattern.test(email);
-  // if (emailValid == true) {
-  //   emailForm.classList.remove("validFalse");
-  //   emailForm.classList.add("validTrue");
-  window.location.replace("user/wall.php");
-  // } else {
-  //   emailForm.classList.remove("validTrue");
-  //   emailForm.classList.add("validFalse");
-  // }
-});
 //скрыть окно ввода временного пароля
 const close = document.getElementById("close");
 setListener(close, "click", () => {
@@ -212,3 +193,24 @@ heightField(writeMessage);
 $(document).on("input", "textarea", function () {
   $(this).outerHeight(38).outerHeight(this.scrollHeight);
 });
+
+//проверка данных при регистрации
+const btnRegister = document.getElementById("btnOpenWindow");
+const openWindow = document.getElementById("invisible");
+const emailForm = document.getElementById("email");
+const modalWindow = document.getElementById("modalWindow");
+//Валидация email
+// setListener(btnRegister, "click", () => {
+//   let email = document.getElementById("email").value;
+//   let pattern =
+//     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//   let emailValid = pattern.test(email);
+//   if (emailValid == true) {
+//     emailForm.classList.remove("validFalse");
+//     emailForm.classList.add("validTrue");
+//     window.location.replace("user/wall.php");
+//   } else {
+//     emailForm.classList.remove("validTrue");
+//     emailForm.classList.add("validFalse");
+//   }
+// });

@@ -41,19 +41,20 @@
           </button>
         </form>
 
-        <form action="#" class="border authForm">
+        <form action="PHP/confirmRegistration.php" class="border authForm" method="post">
           <p class="title mb">Регистрация</p>
           <input
             class="border center inputPassword"
             id="email"
             type="email"
-            name="e-mail"
+            name="email"
             placeholder="Введите E-mail"
             required
           />
+          
           <input
             class="border center inputPassword"
-            name="confirmPass"
+            name="nickname"
             type="text"
             placeholder="Введите никнейм"
             required
@@ -72,8 +73,7 @@
             placeholder="Повторите пароль"
             required
           />
-
-          <button id="btnOpenWindow" class="btn btnSubmit center" type="submit">
+          <button id="btnRegister" class="btn btnSubmit center" type="submit">
             Зарегистрироваться
           </button>
         </form>
