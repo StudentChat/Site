@@ -1,3 +1,11 @@
+<?php
+  if(isset($_SESSION["session_username"]))
+    {
+      // вывод "Session is set"; // в целях проверки
+      header("Location: ../user/wall.php");
+    }
+  ?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
