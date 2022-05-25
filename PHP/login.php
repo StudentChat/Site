@@ -20,7 +20,7 @@ if($rows==0){
     
 }
 if($rows==1){
-    setcookie($user['Email'],$user['Email'],time()+3600*24*30,"/");
+    setcookie('user',$user['Email'],time()+3600*24*30,"/");
     $connection->close();
     header('Location: ../user/wall.php');
 }

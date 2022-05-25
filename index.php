@@ -17,6 +17,8 @@
       </div>
     </header>
 
+<?php error_reporting(0);
+if($_COOKIE['user']==''):?>
     <section class="">
       <div class="authCenterScreen db center">
         <form action="php/login.php" class="border authForm" method="post">
@@ -82,6 +84,9 @@
         </p>
       </div>
     </section>
+    <?php else: header('Location: user/wall.php')?>
+
+    <?php endif; ?>
 
     <!-- <div id="modalWindow" class="invisible modalWindow">
       <form action="#" id="invisible" class="border confirmForm invisible">

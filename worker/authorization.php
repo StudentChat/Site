@@ -19,60 +19,59 @@
 
     <section class="">
       <div class="authCenterScreen db center">
-        <form action="#" class="border authForm">
+        <form action="../php/login.php" class="border authForm" method="post">
           <p class="title mb">Вход</p>
           <input
             class="border center inputPassword"
             id="email"
             type="email"
-            name="e-mail"
+            name="emailLog"
             placeholder="Введите E-mail"
             required
           />
           <input
             class="border center inputPassword mb"
-            name="pass"
+            name="passwordLog"
             type="password"
             placeholder="Введите пароль"
             required
           />
-          <a
+          <button
             href="vacancy.php"
-            id=""
             class="btn btnSubmit center btnLink"
             type="submit"
           >
             Войти
-          </a>
+          </button>
         </form>
 
-        <form action="#" class="border authForm">
+        <form action="../php/confirmRegistration.php" class="border authForm" method="post">
           <p class="title mb">Регистрация</p>
           <input
             class="border center inputPassword"
             id="email"
             type="email"
-            name="e-mail"
+            name="emailReg"
             placeholder="Введите E-mail"
             required
           />
           <input
             class="border center inputPassword"
-            name="pass"
+            name="passwordReg"
             type="password"
             placeholder="Введите пароль"
             required
           />
-          <input
+          <!-- <input
             class="border center inputPassword"
             name="confirmPass"
             type="password"
             placeholder="Повторите пароль"
             required
-          />
+          /> -->
           <input
             class="border center inputPassword mb"
-            name="confirmPass"
+            name="usernameReg"
             type="text"
             placeholder="Введите название организации"
             required
