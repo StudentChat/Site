@@ -1,34 +1,27 @@
 <?php
-	// session_start();
+use FTP\Connection;
+$email = filter_var(trim($_POST['emailLog']),FILTER_UNSAFE_RAW);
+$password = filter_var(trim($_POST['passwordLog']),FILTER_UNSAFE_RAW);
 
-	require_once('../connectDB.php');
+$passwordHash = md5($password.'qwerty12345');
 
-	// if(isset($_POST["login"]))
-    // {
-	    if(!empty($_POST['emailLogin']) && !empty($_POST['passwordLogin'])) {
-	    $email=$_POST['emailLogin'];
-	    $passwordLogin=$_POST['passwordLogin'];
-	    $query =mysqli_query($connection,"SELECT * FROM users WHERE email = '.$email.' AND password = '.$password.'");
-	    $numrows= mysqli_num_rows($connection,$query);
-        print_r($numrows);
-	    if($numrows!=0)
-        {
-            while($row = mysqli_fetch_assoc($query))
-            {
-                $dbemail=$row['Email'];
-                $dbpasswordLogin=$row['Password'];
-            }
-            if($email == $dbemail && $passwordLogin == $dbpasswordLogin)
-            {
-                $_SESSION['session_username']=$email;	
-                header("Location:../user/wall.php");
-            }
-	    } else {
-	        // $message = "Invalid username or passwordLogin!";
-	        echo  "Invalid username or passwordLogin!";
-        }
-	    } else {
-            $message = "All fields are required!";
-	    }
-	// }
-	?>
+require_once('../connectDB.php');
+
+$result = mysqli_query($connection,"SELECT * FROM `users` WHERE `Email` = '$email' AND `password` = '$passwordHash'");
+
+$rows = mysqli_num_rows($result);
+
+$user = mysqli_fetch_array($result);
+
+if($rows==0){
+    echo('Такой пользователь не найден!!!, пожалуйста зарегистрируйтесь!');
+    $connection->close();
+    exit();
+    
+}
+if($rows==1){
+    setcookie($user['Email'],$user['Email'],time()+3600*24*30,"/");
+    $connection->close();
+    header('Location: ../user/wall.php');
+}
+?>

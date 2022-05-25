@@ -19,19 +19,19 @@
 
     <section class="">
       <div class="authCenterScreen db center">
-        <form action="php/login.php" class="border authForm">
+        <form action="php/login.php" class="border authForm" method="post">
           <p class="title mb">Вход</p>
           <input
             class="border center inputPassword"
             id="email"
             type="email"
-            name="emailLogin"
+            name="emailLog"
             placeholder="Введите E-mail"
             required
           />
           <input
             class="border center inputPassword mb"
-            name="passwordLogin"
+            name="passwordLog"
             type="password"
             placeholder="Введите пароль"
             required
@@ -47,21 +47,21 @@
             class="border center inputPassword"
             id="email"
             type="email"
-            name="email"
+            name="emailReg"
             placeholder="Введите E-mail"
             required
           />
           
           <input
             class="border center inputPassword"
-            name="username"
+            name="usernameReg"
             type="text"
             placeholder="Введите никнейм"
             required
           />
           <input
             class="border center inputPassword"
-            name="password"
+            name="passwordReg"
             type="password"
             placeholder="Введите пароль"
             required
