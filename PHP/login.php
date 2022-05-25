@@ -14,7 +14,7 @@ $rows = mysqli_num_rows($result);
 $user = mysqli_fetch_array($result);
 
 if($rows==0){
-    echo('Такой пользователь не найден!!!, пожалуйста зарегистрируйтесь!');
+    echo('Такой пользователь не найден!!!, пожалуйста <a href = "../">зарегистрируйтесь!</a>');
     $connection->close();
     exit();
     
