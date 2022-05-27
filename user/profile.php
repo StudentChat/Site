@@ -1,5 +1,8 @@
 <?php
-require_once("../modules/headerUser.php")
+require_once("../modules/headerUser.php");
+
+$email = $_COOKIE[$user];
+print_r($email);
 ?>
 
     <section class="container">

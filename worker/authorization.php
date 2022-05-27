@@ -11,7 +11,7 @@
   <body>
     <header>
       <div class="authHeader center">
-        <a class="center db authLogo" href="index.php">
+        <a class="center db authLogo" href="../index.php">
           <img src="../img/Logo-image-Worker.svg" alt="Логотип" width="500px"
         /></a>
       </div>

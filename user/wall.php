@@ -1,5 +1,9 @@
 <?php
-require_once("../modules/headerUser.php")
+require_once("../modules/headerUser.php");
+if($_COOKIE['user']=='')
+{
+  header('Location: ../index.php');
+}
 ?>
 
     <div class="center container filters">

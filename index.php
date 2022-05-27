@@ -17,8 +17,12 @@
       </div>
     </header>
 
-<?php error_reporting(0);
-if($_COOKIE['user']==''):?>
+    <?php 
+    error_reporting(0);
+    
+    if($_COOKIE['user']==''):
+    ?>
+
     <section class="">
       <div class="authCenterScreen db center">
         <form action="php/login.php" class="border authForm" method="post">
@@ -43,7 +47,7 @@ if($_COOKIE['user']==''):?>
           </button>
         </form>
 
-        <form action="PHP/confirmRegistration.php" class="border authForm" method="post">
+        <form action="php/confirmRegistration.php" class="border authForm" method="post">
           <p class="title mb">Регистрация</p>
           <input
             class="border center inputPassword"
@@ -134,6 +138,7 @@ if($_COOKIE['user']==''):?>
       ></textarea>
       <button class="center btn db" type="submit">Отправить</button>
     </form>
+    
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
   </body>
